@@ -8,43 +8,51 @@
  @import "mixin";
  @import "variables";
 
-@include font-face("Novecento", font-files("novecentowide-light-webfont.ttf", "novecentowide-light-webfont.otf"));
-@include font-face("CardoItalic", font-files("cardo-italic-webfont.ttf", "cardo-italic-webfont.otf"));
+@include font-face("Novecento", font-files("novecentowide-light-webfont.ttf", "novecentowide-light-webfont.otf", "novecentowide-light-webfont.woff", "novecentowide-light-webfont.eot", "novecentowide-light-webfont.svg"));
+@include font-face("CardoItalic", font-files("cardo-italic-webfont.ttf", "cardo-italic-webfont.otf", "cardo-italic-webfont.woff", "cardo-italic-webfont.eot", "cardo-italic-webfont.svg"));
 
 
  * {
  	@include box-sizing(border-box);
  	text-shadow: $smoothTextShadow;
  	-webkit-font-smoothing: antialiased;
+ 	font-size: $baseFontSize;
  }
 
  body {
  	background: url(../images/background-body.jpg) no-repeat center center fixed;
- 	@include cover(cover);
+ 	@include cover(cover); 	
  }
 
 // Struktur
-header {
-	max-width: $desktopWidth;
+.pageWrapper{
 	margin: 0 auto;
-	padding: $marginBig 0 0;
+	max-width: $desktopWidth;
+	padding: 0 $marginMedium;
+}
+header {
+	padding: $marginBig 0;
+	text-align: center;
+	border-bottom: $whiteBorder;
 	.logo{
-		text-align: center;
 		margin-bottom: $marginBig;
 	}
 }
 
 // Typografie
+h1, h2, h3, h4, h5, h6, p, li{
+	line-height:$lineHeight;
+}
 
 h1{
 	font-family:"Novecento";
-	font-size: 48px;
+	font-size: $baseFontSize*4;
 	color: $corporateColorViolet;
 	letter-spacing: $letterSpacingHeadline;
-	header &{
-		text-align: center;
-	}
+	margin-bottom: $marginMedium;
 }
 h2{
 	font-family:"CardoItalic";
+	font-size: $baseFontSize*2;
+	color: $corporateColorLauftext;
 }
