@@ -8,9 +8,13 @@
  @import "mixin";
  @import "variables";
 
+@include font-face("Novecento", font-files("novecentowide-light-webfont.ttf", "novecentowide-light-webfont.otf"));
+
 
  * {
  	@include box-sizing(border-box);
+ 	text-shadow: $smoothTextShadow;
+ 	-webkit-font-smoothing: antialiased;
  }
 
  body {
@@ -20,7 +24,7 @@
 
 // Struktur
 header {
-	width: $pageWidth;
+	max-width: $desktopWidth;
 	margin: 0 auto;
 	padding: $marginBig 0 0;
 	.logo{
@@ -32,7 +36,10 @@ header {
 // Typografie
 
 h1{
+	font-family:"Novecento";
 	font-size: 48px;
+	color: $corporateColorViolet;
+	letter-spacing: $letterSpacingHeadline;
 	header &{
 		text-align: center;
 	}

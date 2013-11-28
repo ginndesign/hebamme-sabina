@@ -82,41 +82,6 @@
       "initialSize" : 5854,
       "fileType" : 8192
     },
-    "\/sass\/screen.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/screen.scss",
-      "outputStyle" : 2,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/stylesheets\/screen.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/sass\/_mixin.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/_mixin.scss",
-      "outputStyle" : 2,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/stylesheets\/_mixin.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/images\/background-body.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/background-body.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/background-body.jpg",
-      "initialSize" : 1196356,
-      "fileType" : 4096
-    },
     "\/images\/icon-rueckbildung.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -128,15 +93,15 @@
       "initialSize" : 5160,
       "fileType" : 8192
     },
-    "\/sass\/ie.scss" : {
+    "\/sass\/_mixin.scss" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/ie.scss",
+      "inputAbbreviatedPath" : "\/sass\/_mixin.scss",
       "outputStyle" : 2,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/stylesheets\/ie.css",
+      "outputAbbreviatedPath" : "\/stylesheets\/_mixin.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -151,6 +116,18 @@
       "initialSize" : 16845,
       "fileType" : 8192
     },
+    "\/sass\/screen.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/sass\/screen.scss",
+      "outputStyle" : 2,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/stylesheets\/screen.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
     "\/config.rb" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -159,6 +136,29 @@
       "inputAbbreviatedPath" : "\/config.rb",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 32768
+    },
+    "\/sass\/ie.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/sass\/ie.scss",
+      "outputStyle" : 2,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/stylesheets\/ie.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/images\/background-body.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/background-body.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/background-body.jpg",
+      "initialSize" : 1196356,
+      "fileType" : 4096
     },
     "\/sass\/_variables.scss" : {
       "ignoreWasSetByUser" : 0,
