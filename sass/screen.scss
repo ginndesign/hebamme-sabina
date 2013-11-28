@@ -7,6 +7,7 @@
  @import "compass/css3";
  @import "mixin";
  @import "variables";
+ @import "grid";
 
 @include font-face("Novecento", font-files("novecentowide-light-webfont.ttf", "novecentowide-light-webfont.otf", "novecentowide-light-webfont.woff", "novecentowide-light-webfont.eot", "novecentowide-light-webfont.svg"));
 @include font-face("CardoItalic", font-files("cardo-italic-webfont.ttf", "cardo-italic-webfont.otf", "cardo-italic-webfont.woff", "cardo-italic-webfont.eot", "cardo-italic-webfont.svg"));
@@ -25,15 +26,11 @@
  }
 
 // Struktur
-.pageWrapper{
-	margin: 0 auto;
-	max-width: $desktopWidth;
-	padding: 0 $marginMedium;
-}
 header {
 	padding: $marginBig 0;
 	text-align: center;
 	border-bottom: $whiteBorder;
+	margin-bottom: $marginBig;
 	.logo{
 		margin-bottom: $marginBig;
 	}
@@ -42,12 +39,12 @@ header {
 // Typografie
 h1, h2, h3, h4, h5, h6, p, li{
 	line-height:$lineHeight;
+	color: $corporateColorViolet;		
 }
 
 h1{
 	font-family:"Novecento";
 	font-size: $baseFontSize*4;
-	color: $corporateColorViolet;
 	letter-spacing: $letterSpacingHeadline;
 	margin-bottom: $marginMedium;
 }
@@ -55,4 +52,16 @@ h2{
 	font-family:"CardoItalic";
 	font-size: $baseFontSize*2;
 	color: $corporateColorLauftext;
+}
+h3{
+	font-family:"CardoItalic";
+	font-size: $baseFontSize*2.333;
+}
+
+// Grid
+.contentWrapper{
+	.content{
+		background: white;
+		padding: $marginMedium;
+	}
 }

@@ -1,3 +1,5 @@
+// Background
+
 @mixin cover($cover-property) {
 	-webkit-background-size: $cover-property;
 	-moz-background-size: $cover-property;
@@ -5,3 +7,6 @@
 	-o-background-size: $cover-property;;
 	transition: $cover-property;;
 }
+
+// Typografie
+
