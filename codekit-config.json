@@ -38,6 +38,17 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
+    "\/images\/logo-sabina-oertli-hebamme-zuerich.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/logo-sabina-oertli-hebamme-zuerich.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/logo-sabina-oertli-hebamme-zuerich.png",
+      "initialSize" : 16845,
+      "fileType" : 8192
+    },
     "\/images\/icon-menu.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -71,6 +82,41 @@
       "initialSize" : 5854,
       "fileType" : 8192
     },
+    "\/sass\/screen.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/sass\/screen.scss",
+      "outputStyle" : 2,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/stylesheets\/screen.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/sass\/_mixin.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/sass\/_mixin.scss",
+      "outputStyle" : 2,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/stylesheets\/_mixin.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/images\/background-body.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/background-body.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/background-body.jpg",
+      "initialSize" : 1196356,
+      "fileType" : 4096
+    },
     "\/images\/icon-rueckbildung.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -82,15 +128,15 @@
       "initialSize" : 5160,
       "fileType" : 8192
     },
-    "\/sass\/screen.scss" : {
+    "\/sass\/ie.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/screen.scss",
-      "outputStyle" : 0,
+      "inputAbbreviatedPath" : "\/sass\/ie.scss",
+      "outputStyle" : 2,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/stylesheets\/screen.css",
+      "outputAbbreviatedPath" : "\/stylesheets\/ie.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -105,29 +151,6 @@
       "initialSize" : 16845,
       "fileType" : 8192
     },
-    "\/images\/background-body.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/background-body.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/background-body.jpg",
-      "initialSize" : 1196356,
-      "fileType" : 4096
-    },
-    "\/sass\/ie.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/ie.scss",
-      "outputStyle" : 0,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/stylesheets\/ie.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
     "\/config.rb" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -136,6 +159,18 @@
       "inputAbbreviatedPath" : "\/config.rb",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 32768
+    },
+    "\/sass\/_variables.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/sass\/_variables.scss",
+      "outputStyle" : 2,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/stylesheets\/_variables.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/images\/icon-geburtsvorbereitung.png" : {
       "ignoreWasSetByUser" : 0,
@@ -154,7 +189,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/sass\/print.scss",
-      "outputStyle" : 0,
+      "outputStyle" : 2,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/stylesheets\/print.css",
       "fileType" : 4,
@@ -211,7 +246,7 @@
     "javascriptSyntaxCheckerStyle" : 1,
     "sassAutoOutputPathReplace1" : "sass",
     "slimAutoOutputPathReplace1" : "",
-    "sassOutputStyle" : 0,
+    "sassOutputStyle" : 2,
     "coffeeAutoOutputPathRelativePath" : "",
     "slimCompileOnly" : 0,
     "slimLogicless" : 0,

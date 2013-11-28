@@ -3,7 +3,37 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "compass/reset";
+ @import "compass/reset";
+ @import "compass/css3";
+ @import "mixin";
+ @import "variables";
 
-body {
+
+ * {
+ 	@include box-sizing(border-box);
+ }
+
+ body {
+ 	background: url(../images/background-body.jpg) no-repeat center center fixed;
+ 	@include cover(cover);
+ }
+
+// Struktur
+header {
+	width: $pageWidth;
+	margin: 0 auto;
+	padding: $marginBig 0 0;
+	.logo{
+		text-align: center;
+		margin-bottom: $marginBig;
+	}
+}
+
+// Typografie
+
+h1{
+	font-size: 48px;
+	header &{
+		text-align: center;
+	}
 }
