@@ -53,6 +53,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-family: "Novecento";
   src: url('../fonts/novecentowide-light-webfont.ttf') format('truetype'), url('../fonts/novecentowide-light-webfont.otf') format('opentype'); }
 
+@font-face {
+  font-family: "CardoItalic";
+  src: url('../fonts/cardo-italic-webfont.ttf') format('truetype'), url('../fonts/cardo-italic-webfont.otf') format('opentype'); }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -83,3 +87,6 @@ h1 {
   letter-spacing: 0.05em; }
   header h1 {
     text-align: center; }
+
+h2 {
+  font-family: "CardoItalic"; }

@@ -9,6 +9,7 @@
  @import "variables";
 
 @include font-face("Novecento", font-files("novecentowide-light-webfont.ttf", "novecentowide-light-webfont.otf"));
+@include font-face("CardoItalic", font-files("cardo-italic-webfont.ttf", "cardo-italic-webfont.otf"));
 
 
  * {
@@ -43,4 +44,7 @@ h1{
 	header &{
 		text-align: center;
 	}
+}
+h2{
+	font-family:"CardoItalic";
 }
