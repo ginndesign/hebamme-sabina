@@ -7,6 +7,7 @@ sass_dir = "sass"
 images_dir = "images"
 javascripts_dir = "javascripts"
 fonts_dir = "fonts"
+jade_dir = "jade"
 
 output_style = :nested
 
