@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,700);
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
@@ -171,7 +172,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   box-sizing: border-box;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.005);
   -webkit-font-smoothing: antialiased;
-  font-size: 12px; }
+  font-size: 12px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
 
 body {
   background: url(../images/background-body.jpg) no-repeat center center fixed;
@@ -211,7 +216,28 @@ h2 {
 
 h3 {
   font-family: "CardoItalic";
-  font-size: 27.996px; }
+  font-size: 27.996px;
+  margin-bottom: 14px; }
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1.5em;
+  font-size: 15.996px;
+  color: #a8998b;
+  margin-bottom: 7px; }
+  p:last-child {
+    margin-bottom: 0; }
+
+a {
+  color: #2acd7e;
+  text-decoration: none; }
+  p a {
+    border-bottom: 1px solid #2acd7e; }
+    p a:hover {
+      border-bottom: 1px solid #622181; }
+  a:hover {
+    color: #622181; }
 
 .contentWrapper .content {
   background: white;
