@@ -247,6 +247,7 @@ h3 {
 
 h4 {
   font-family: "NovecentoBook";
+  font-size: 18px;
   letter-spacing: 0.05rem;
   margin-bottom: 7px; }
 
@@ -254,7 +255,7 @@ p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   line-height: 1.5em;
-  font-size: 15.996px;
+  font-size: 18px;
   color: #a8998b;
   margin-top: 7px; }
   p:first-child {
@@ -263,6 +264,7 @@ p {
 ul {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
+  font-size: 18px;
   letter-spacing: 0; }
   ul li {
     color: #a8998b; }
@@ -342,6 +344,9 @@ a {
 
   h3 {
     margin-bottom: 7px; }
+
+  p, h4, ul {
+    font-size: 15.996px; }
 
   .teaser img {
     display: none; }
