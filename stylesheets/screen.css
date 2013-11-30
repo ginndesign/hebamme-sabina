@@ -247,7 +247,8 @@ h3 {
 
 h4 {
   font-family: "NovecentoBook";
-  letter-spacing: 0.05rem; }
+  letter-spacing: 0.05rem;
+  margin-bottom: 7px; }
 
 p {
   font-family: 'Open Sans', sans-serif;
@@ -267,11 +268,13 @@ ul {
     color: #a8998b; }
   footer ul li {
     display: inline; }
+  footer ul li:before, footer ul li a:before {
+    font: 27.996px "Entypo";
+    margin: 0 5px 0 10px; }
   nav ul {
     font-family: 'NovecentoBook';
     letter-spacing: 0.05rem; }
-    nav ul li a:before {
-      font: 27.996px "Entypo";
+    nav ul li:before, nav ul li a:before {
       margin: 0 5px 0 30px; }
 
 .home:before {
@@ -286,6 +289,13 @@ ul {
 .kontakt:before {
   font-size: 36px;
   content: "\E724";
+  vertical-align: -2px; }
+
+.telefon:before {
+  content: "\1F4DE"; }
+
+.e-mail:before {
+  content: "\2709";
   vertical-align: -2px; }
 
 a {

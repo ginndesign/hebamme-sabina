@@ -87,6 +87,7 @@ h3{
 h4{
 	font-family:"NovecentoBook";
 	letter-spacing: $letterSpacingHeadline/2;
+	margin-bottom: $marginSmall/2;
 }
 p{
 	font-family: 'Open Sans', sans-serif;
@@ -112,20 +113,22 @@ ul{
 		li{
 			display: inline;
 		}
+		li:before, li a:before{
+			font:$baseFontSize*2.333 'Entypo';
+			margin: 0 $marginMedium/4 0 $marginMedium/2;
+		}
 	}
 	nav &{
 		font-family: 'NovecentoBook';
 		letter-spacing: $letterSpacingHeadline/2;
-		li{
-			a {
-				&:before {
-					font:$baseFontSize*2.333 'Entypo';
-					margin: 0 $marginMedium/4 0 $marginMedium*1.5;
-				}
-			}
+		li:before, li a:before{
+			margin: 0 $marginMedium/4 0 $marginMedium*1.5;
 		}
 	}
 }
+
+// Icons
+
 .home {
 	&:before {
 		content:"\2302";
@@ -147,6 +150,17 @@ ul{
 		content:"\E724";
 		vertical-align: -2px;
 
+	}
+}
+.telefon {
+	&:before {
+		content:"\1F4DE";
+	}
+}
+.e-mail {
+	&:before {
+		content:"\2709";
+		vertical-align: -2px;
 	}
 }
 // Links
