@@ -18,7 +18,7 @@
  	text-shadow: $smoothTextShadow;
  	-webkit-font-smoothing: antialiased;
  	font-size: $baseFontSize;
- 	@include transition(all 0.3s ease-in-out);
+ 	@include transition(all 0.3s ease);
  }
 
  body {
@@ -41,6 +41,12 @@ header {
 		margin-bottom: $marginBig;
 	}
 }
+.contentWrapper{
+	.content{
+		background: white;
+		padding: $marginMedium;
+	}
+}
 
 // Typografie
 h1, h2, h3, h4, h5, h6, p, li{
@@ -50,13 +56,13 @@ h1, h2, h3, h4, h5, h6, p, li{
 
 h1{
 	font-family:"Novecento";
-	font-size: $baseFontSize*4;
+	font-size: $baseFontSize*5;
 	letter-spacing: $letterSpacingHeadline;
 	margin-bottom: $marginMedium;
 }
 h2{
 	font-family:"CardoItalic";
-	font-size: $baseFontSize*2;
+	font-size: $baseFontSize*2.5;
 	color: $corporateColorLauftext;
 }
 h3{
@@ -70,28 +76,91 @@ p{
 	line-height: $lineHeightLauftext;
 	font-size: $baseFontSize*1.333;
 	color: $corporateColorLauftext;
-	margin-bottom: $marginSmall/2;
-	&:last-child{
-		margin-bottom: 0;
+	margin-top: $marginSmall/2;
+	&:first-child{
+		margin-top: 0;
 	}
 }
+
+// Links
+
 a{
 	color: $corporateLinkColor;
 	text-decoration: none;
-	p &{
-		border-bottom: $linkBorder;
+	.contentWrapper p &{
+		display: inline-block;
+		margin-top: $marginSmall/2;
+		padding: $marginMedium/10 $marginMedium/4;
+		border: $linkBorder;
 		&:hover{
-		border-bottom: $linkBorderHover;
-	}
+			color: $white;
+			background: $corporateLinkColor;
+		}
+		&:active{
+			background: $corporateColorViolet;
+			border: $linkBorderHover;
+		}
 	}
 	&:hover{
 		color: $corporateColorViolet;
 	}
 }
-// Grid
-.contentWrapper{
-	.content{
-		background: white;
-		padding: $marginMedium;
+
+// Bilder
+
+img{
+	.logo &{
+		width: 241px;
+	}
+	.teaser &{
+		display: block;
+		margin: 0 auto $marginMedium;
+	}
+
+}
+
+// Media Queries
+
+@media desktop, only screen and (max-width: 1040px) {
+	h1{
+		font-size: $baseFontSize*4;
+	}
+	h2{
+		font-size: $baseFontSize*2;
+	}
+	img{
+		.logo &{
+			width: 200px;
+		}
+	}
+
+}
+
+@media handheld, only screen and (max-width: 768px) {
+	h1{
+		font-size: $baseFontSize*3;
+	}
+	h2{
+		font-size: $baseFontSize*1.75;
+	}
+	h3{
+		margin-bottom: $marginSmall/2;
+	}
+	img{
+		.teaser &{
+			display: none;
+		}
+	}
+	header{
+		padding: $marginSmall 0;
+		.logo {
+			margin-bottom: $marginSmall;
+		}
+	}
+}
+
+@media handheld, only screen and (max-width: 320px) {
+	header{
+		padding: $marginMedium/4 0;
 	}
 }

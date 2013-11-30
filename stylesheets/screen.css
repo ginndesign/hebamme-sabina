@@ -62,11 +62,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding-right: 20px; }
 
 [class*='col-']:last-of-type {
-  padding-right: 0px; }
+  padding-right: 20px; }
 
 .grid {
   width: 100%;
-  max-width: 980px;
+  max-width: 1240px;
   min-width: 755px;
   margin: 0 auto;
   overflow: hidden; }
@@ -77,10 +77,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   clear: both; }
 
 .grid-pad {
-  padding: 20px 20px 0px 20px; }
+  padding: 0 20px; }
 
 .grid-pad > [class*='col-']:last-of-type {
-  padding-right: 20px; }
+  padding-right: 0; }
 
 .push-right {
   float: right; }
@@ -141,7 +141,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 .col-7-12 {
   width: 58.33%; }
 
-@media handheld, only screen and (max-width: 767px) {
+@media handheld, only screen and (max-width: 768px) {
   .grid {
     width: 100%;
     min-width: 0;
@@ -157,6 +157,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     margin-right: 0px;
     margin-top: 20px;
     padding-left: 0;
+    padding-right: 0; }
+
+  [class*='col-']:last-of-type {
     padding-right: 0; } }
 @font-face {
   font-family: "Novecento";
@@ -173,10 +176,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.005);
   -webkit-font-smoothing: antialiased;
   font-size: 12px;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
 
 body {
   background: url(../images/background-body.jpg) no-repeat center center fixed;
@@ -199,19 +202,23 @@ header {
   header .logo {
     margin-bottom: 35px; }
 
+.contentWrapper .content {
+  background: white;
+  padding: 20px; }
+
 h1, h2, h3, h4, h5, h6, p, li {
   line-height: 1.3em;
   color: #622181; }
 
 h1 {
   font-family: "Novecento";
-  font-size: 48px;
+  font-size: 60px;
   letter-spacing: 0.1rem;
   margin-bottom: 20px; }
 
 h2 {
   font-family: "CardoItalic";
-  font-size: 24px;
+  font-size: 30px;
   color: #a8998b; }
 
 h3 {
@@ -225,20 +232,59 @@ p {
   line-height: 1.5em;
   font-size: 15.996px;
   color: #a8998b;
-  margin-bottom: 7px; }
-  p:last-child {
-    margin-bottom: 0; }
+  margin-top: 7px; }
+  p:first-child {
+    margin-top: 0; }
 
 a {
   color: #2acd7e;
   text-decoration: none; }
-  p a {
-    border-bottom: 1px solid #2acd7e; }
-    p a:hover {
-      border-bottom: 1px solid #622181; }
+  .contentWrapper p a {
+    display: inline-block;
+    margin-top: 7px;
+    padding: 2px 5px;
+    border: 1px solid #2acd7e; }
+    .contentWrapper p a:hover {
+      color: white;
+      background: #2acd7e; }
+    .contentWrapper p a:active {
+      background: #622181;
+      border: 1px solid #622181; }
   a:hover {
     color: #622181; }
 
-.contentWrapper .content {
-  background: white;
-  padding: 20px; }
+.logo img {
+  width: 241px; }
+.teaser img {
+  display: block;
+  margin: 0 auto 20px; }
+
+@media desktop, only screen and (max-width: 1040px) {
+  h1 {
+    font-size: 48px; }
+
+  h2 {
+    font-size: 24px; }
+
+  .logo img {
+    width: 200px; } }
+@media handheld, only screen and (max-width: 768px) {
+  h1 {
+    font-size: 36px; }
+
+  h2 {
+    font-size: 21px; }
+
+  h3 {
+    margin-bottom: 7px; }
+
+  .teaser img {
+    display: none; }
+
+  header {
+    padding: 14px 0; }
+    header .logo {
+      margin-bottom: 14px; } }
+@media handheld, only screen and (max-width: 320px) {
+  header {
+    padding: 5px 0; } }
