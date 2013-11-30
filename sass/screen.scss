@@ -10,6 +10,7 @@
  @import "grid";
 
  @include font-face("Novecento", font-files("novecentowide-light-webfont.ttf", "novecentowide-light-webfont.otf", "novecentowide-light-webfont.woff", "novecentowide-light-webfont.eot", "novecentowide-light-webfont.svg"));
+ @include font-face("NovecentoBook", font-files("novecentowide-book-webfont.ttf", "novecentowide-book-webfont.otf", "novecentowide-book-webfont.woff", "novecentowide-book-webfont.eot", "novecentowide-book-webfont.svg"));
  @include font-face("CardoItalic", font-files("cardo-italic-webfont.ttf", "cardo-italic-webfont.otf", "cardo-italic-webfont.woff", "cardo-italic-webfont.eot", "cardo-italic-webfont.svg"));
  @include font-face("Entypo", font-files("entypo.ttf", "entypo.otf", "entypo.woff", "entypo.eot", "entypo.svg"));
  @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,700);
@@ -25,11 +26,7 @@
  body {
  	background: url(../images/background-body.jpg) no-repeat center center fixed;
  	@include cover(cover);
- 	-webkit-hyphens: auto;
- 	-moz-hyphens: auto;
- 	-ms-hyphens: auto;
- 	-o-hyphens: auto;
- 	hyphens: auto;
+ 	@include hyphens(auto);
  	margin-right: -20px; 	
  }
 
@@ -38,7 +35,7 @@ header {
 	padding: $marginBig 0;
 	text-align: center;
 	border-bottom: $whiteBorder;
-	margin-bottom: $marginBig;
+	margin-bottom: $marginMedium;
 	.logo{
 		margin-bottom: $marginBig;
 	}
@@ -47,6 +44,21 @@ header {
 	.content{
 		background: white;
 		padding: $marginMedium;
+	}
+}
+
+footer {
+	text-align: center;
+	margin: $marginMedium 0;
+}
+
+// Navigation
+nav {
+	footer & {
+		border-top: $whiteBorder;
+		border-bottom: $whiteBorder;
+		padding: $marginMedium/4 0;
+		margin: 0 0 $marginMedium;
 	}
 }
 
@@ -72,6 +84,10 @@ h3{
 	font-size: $baseFontSize*2.333;
 	margin-bottom: $marginSmall;
 }
+h4{
+	font-family:"NovecentoBook";
+	letter-spacing: $letterSpacingHeadline/2;
+}
 p{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
@@ -86,14 +102,53 @@ p{
 
 // Listen
 ul{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	letter-spacing: 0;
+	li{
+		color: $corporateColorLauftext;
+	}
 	footer &{
-		text-align: center;
 		li{
 			display: inline;
 		}
 	}
+	nav &{
+		font-family: 'NovecentoBook';
+		letter-spacing: $letterSpacingHeadline/2;
+		li{
+			a {
+				&:before {
+					font:$baseFontSize*2.333 'Entypo';
+					margin: 0 $marginMedium/4 0 $marginMedium*1.5;
+				}
+			}
+		}
+	}
 }
+.home {
+	&:before {
+		content:"\2302";
+	}
+}
+.ueber {
+	&:before {
+		content:"\1F464";
+	}
+}
+.angebot {
+	&:before {
+		content:"\1F4BF";
+	}
+}
+.kontakt {
+	&:before {
+		font-size:$baseFontSize*3;
+		content:"\E724";
+		vertical-align: -2px;
 
+	}
+}
 // Links
 
 a{
@@ -150,7 +205,7 @@ img{
 
 @media handheld, only screen and (max-width: 768px) {
 	body {
-	 	margin-right: 0; 	
+		margin-right: 0; 	
 	}	
 
 	h1{
@@ -175,7 +230,7 @@ img{
 	}
 }
 
-@media handheld, only screen and (max-width: 320px) {
+@media iphone, only screen and (max-width: 320px) {
 	header{
 		padding: $marginMedium/4 0 $marginMedium;
 	}

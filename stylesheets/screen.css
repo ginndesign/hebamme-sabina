@@ -166,6 +166,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   src: url('../fonts/novecentowide-light-webfont.ttf') format('truetype'), url('../fonts/novecentowide-light-webfont.otf') format('opentype'), url('../fonts/novecentowide-light-webfont.woff') format('woff'), url('../fonts/novecentowide-light-webfont.eot') format('embedded-opentype'), url('../fonts/novecentowide-light-webfont.svg') format('svg'); }
 
 @font-face {
+  font-family: "NovecentoBook";
+  src: url('../fonts/novecentowide-book-webfont.ttf') format('truetype'), url('../fonts/novecentowide-book-webfont.otf') format('opentype'), url('../fonts/novecentowide-book-webfont.woff') format('woff'), url('../fonts/novecentowide-book-webfont.eot') format('embedded-opentype'), url('../fonts/novecentowide-book-webfont.svg') format('svg'); }
+
+@font-face {
   font-family: "CardoItalic";
   src: url('../fonts/cardo-italic-webfont.ttf') format('truetype'), url('../fonts/cardo-italic-webfont.otf') format('opentype'), url('../fonts/cardo-italic-webfont.woff') format('woff'), url('../fonts/cardo-italic-webfont.eot') format('embedded-opentype'), url('../fonts/cardo-italic-webfont.svg') format('svg'); }
 
@@ -203,13 +207,23 @@ header {
   padding: 35px 0;
   text-align: center;
   border-bottom: 1px solid white;
-  margin-bottom: 35px; }
+  margin-bottom: 20px; }
   header .logo {
     margin-bottom: 35px; }
 
 .contentWrapper .content {
   background: white;
   padding: 20px; }
+
+footer {
+  text-align: center;
+  margin: 20px 0; }
+
+footer nav {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 5px 0;
+  margin: 0 0 20px; }
 
 h1, h2, h3, h4, h5, h6, p, li {
   line-height: 1.3em;
@@ -231,6 +245,10 @@ h3 {
   font-size: 27.996px;
   margin-bottom: 14px; }
 
+h4 {
+  font-family: "NovecentoBook";
+  letter-spacing: 0.05rem; }
+
 p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -241,10 +259,34 @@ p {
   p:first-child {
     margin-top: 0; }
 
-footer ul {
-  text-align: center; }
+ul {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0; }
+  ul li {
+    color: #a8998b; }
   footer ul li {
     display: inline; }
+  nav ul {
+    font-family: 'NovecentoBook';
+    letter-spacing: 0.05rem; }
+    nav ul li a:before {
+      font: 27.996px "Entypo";
+      margin: 0 5px 0 30px; }
+
+.home:before {
+  content: "\2302"; }
+
+.ueber:before {
+  content: "\1F464"; }
+
+.angebot:before {
+  content: "\1F4BF"; }
+
+.kontakt:before {
+  font-size: 36px;
+  content: "\E724";
+  vertical-align: -2px; }
 
 a {
   color: #2acd7e;
@@ -298,6 +340,6 @@ a {
     padding: 14px 0; }
     header .logo {
       margin-bottom: 14px; } }
-@media handheld, only screen and (max-width: 320px) {
+@media iphone, only screen and (max-width: 320px) {
   header {
     padding: 5px 0 20px; } }

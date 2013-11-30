@@ -10,3 +10,12 @@
 
 // Typografie
 
+// Hyphenation
+
+@mixin hyphens($hyphens-property) {
+	-webkit-hyphens: $hyphens-property;
+	-moz-hyphens: $hyphens-property;
+	-ms-hyphens: $hyphens-property;
+	-o-hyphens: $hyphens-property;
+	hyphens: $hyphens-property;
+}
