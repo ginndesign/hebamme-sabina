@@ -192,7 +192,8 @@ body {
   -moz-hyphens: auto;
   -ms-hyphens: auto;
   -o-hyphens: auto;
-  hyphens: auto; }
+  hyphens: auto;
+  margin-right: -20px; }
 
 header {
   padding: 35px 0;
@@ -269,6 +270,9 @@ a {
   .logo img {
     width: 200px; } }
 @media handheld, only screen and (max-width: 768px) {
+  body {
+    margin-right: 0; }
+
   h1 {
     font-size: 36px; }
 
@@ -287,4 +291,4 @@ a {
       margin-bottom: 14px; } }
 @media handheld, only screen and (max-width: 320px) {
   header {
-    padding: 5px 0; } }
+    padding: 5px 0 20px; } }
