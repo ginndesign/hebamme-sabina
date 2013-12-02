@@ -2,6 +2,15 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8403",
   "files" : {
+    "\/stylesheets\/print.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/stylesheets\/print.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
     "\/images\/icon-rueckbildung.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -12,15 +21,6 @@
       "outputAbbreviatedPath" : "\/images\/icon-rueckbildung.png",
       "initialSize" : 5160,
       "fileType" : 8192
-    },
-    "\/stylesheets\/print.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/stylesheets\/print.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
     },
     "\/sass\/screen.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -34,16 +34,16 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/images\/background-body.jpg" : {
+    "\/javascripts\/html5.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/background-body.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/background-body.jpg",
-      "initialSize" : 1196356,
-      "fileType" : 4096
+      "inputAbbreviatedPath" : "\/javascripts\/html5.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/javascripts\/html5-ck.js",
+      "fileType" : 64
     },
     "\/stylesheets\/ie.css" : {
       "ignoreWasSetByUser" : 0,
@@ -65,15 +65,6 @@
       "initialSize" : 16845,
       "fileType" : 8192
     },
-    "\/hyphens.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/hyphens.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/javascripts\/Hyphenator.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -85,16 +76,25 @@
       "outputAbbreviatedPath" : "\/javascripts\/Hyphenator-ck.js",
       "fileType" : 64
     },
-    "\/javascripts\/html5.js" : {
+    "\/images\/background-body.jpg" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/javascripts\/html5.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/javascripts\/html5-ck.js",
-      "fileType" : 64
+      "inputAbbreviatedPath" : "\/images\/background-body.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/background-body.jpg",
+      "initialSize" : 1196356,
+      "fileType" : 4096
+    },
+    "\/hyphens.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/hyphens.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/sass\/_variables.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -119,14 +119,17 @@
       "initialSize" : 5854,
       "fileType" : 8192
     },
-    "\/config.rb" : {
+    "\/sass\/ie.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/config.rb",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 32768
+      "inputAbbreviatedPath" : "\/sass\/ie.scss",
+      "outputStyle" : 2,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/stylesheets\/ie.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/sass\/_grid.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -140,17 +143,14 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/sass\/ie.scss" : {
+    "\/config.rb" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/ie.scss",
-      "outputStyle" : 2,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/stylesheets\/ie.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/config.rb",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 32768
     },
     "\/images\/icon-geburtsvorbereitung.png" : {
       "ignoreWasSetByUser" : 0,
@@ -192,15 +192,15 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/images\/logo-sabina-oertli-hebamme-zuerich-hover.png" : {
+    "\/images\/Logo.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/logo-sabina-oertli-hebamme-zuerich-hover.png",
+      "inputAbbreviatedPath" : "\/images\/Logo.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/logo-sabina-oertli-hebamme-zuerich-hover.png",
-      "initialSize" : 17691,
+      "outputAbbreviatedPath" : "\/images\/Logo.png",
+      "initialSize" : 16845,
       "fileType" : 8192
     },
     "\/sass\/_mixin.scss" : {
@@ -215,15 +215,15 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/images\/Logo.png" : {
+    "\/images\/logo-sabina-oertli-hebamme-zuerich-hover.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/Logo.png",
+      "inputAbbreviatedPath" : "\/images\/logo-sabina-oertli-hebamme-zuerich-hover.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/Logo.png",
-      "initialSize" : 16845,
+      "outputAbbreviatedPath" : "\/images\/logo-sabina-oertli-hebamme-zuerich-hover.png",
+      "initialSize" : 17691,
       "fileType" : 8192
     },
     "\/sass\/print.scss" : {
