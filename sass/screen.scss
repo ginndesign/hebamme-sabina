@@ -22,12 +22,10 @@
  	font-size: $baseFontSize;
  	@include transition(all 0.3s ease);
  }
-
  body {
  	background: url(../images/background-body.jpg) no-repeat center center fixed;
  	@include cover(cover);
  	@include hyphens(auto);
- 	margin-right: -20px; 	
  }
 
 // Struktur
@@ -39,6 +37,9 @@ header {
 	.logo{
 		margin-bottom: $marginBig;
 	}
+}
+.headerWrapper, .contentWrapper{
+	margin-right: -20px;
 }
 .contentWrapper{
 	.content{
@@ -61,7 +62,6 @@ nav {
 		margin: 0 0 $marginMedium;
 	}
 }
-
 // Typografie
 h1, h2, h3, h4, h5, h6, p, li{
 	line-height:$lineHeight;
@@ -220,10 +220,6 @@ img{
 }
 
 @media handheld, only screen and (max-width: 768px) {
-	body {
-		margin-right: 0; 	
-	}	
-
 	h1{
 		font-size: $baseFontSize*3;
 	}
@@ -240,6 +236,9 @@ img{
 		.teaser &{
 			display: none;
 		}
+	}
+	.headerWrapper, .contentWrapper{
+	margin-right: 0;
 	}
 	header{
 		padding: $marginSmall 0;

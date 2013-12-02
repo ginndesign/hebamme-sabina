@@ -200,8 +200,7 @@ body {
   -moz-hyphens: auto;
   -ms-hyphens: auto;
   -o-hyphens: auto;
-  hyphens: auto;
-  margin-right: -20px; }
+  hyphens: auto; }
 
 header {
   padding: 35px 0;
@@ -210,6 +209,9 @@ header {
   margin-bottom: 20px; }
   header .logo {
     margin-bottom: 35px; }
+
+.headerWrapper, .contentWrapper {
+  margin-right: -20px; }
 
 .contentWrapper .content {
   background: white;
@@ -333,9 +335,6 @@ a {
   .logo img {
     width: 200px; } }
 @media handheld, only screen and (max-width: 768px) {
-  body {
-    margin-right: 0; }
-
   h1 {
     font-size: 36px; }
 
@@ -350,6 +349,9 @@ a {
 
   .teaser img {
     display: none; }
+
+  .headerWrapper, .contentWrapper {
+    margin-right: 0; }
 
   header {
     padding: 14px 0; }
