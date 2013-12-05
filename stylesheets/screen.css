@@ -310,9 +310,11 @@ a {
     margin-top: 7px;
     padding: 2px 5px;
     border: 1px solid #2acd7e; }
-    .contentWrapper p a:hover {
+    .contentWrapper p a:hover, .contentWrapper p a:focus {
       color: white;
       background: #2acd7e; }
+    .contentWrapper p a:focus {
+      display: block; }
     .contentWrapper p a:active {
       background: #622181;
       border: 1px solid #622181; }

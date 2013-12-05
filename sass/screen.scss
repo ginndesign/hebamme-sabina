@@ -175,9 +175,12 @@ a{
 		margin-top: $marginSmall/2;
 		padding: $marginMedium/10 $marginMedium/4;
 		border: $linkBorder;
-		&:hover{
+		&:hover, &:focus{
 			color: $white;
 			background: $corporateLinkColor;
+		}
+		&:focus{
+			display: block;
 		}
 		&:active{
 			background: $corporateColorViolet;
