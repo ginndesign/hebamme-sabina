@@ -220,11 +220,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   box-sizing: border-box;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.005);
   -webkit-font-smoothing: antialiased;
-  font-size: 12px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  font-size: 12px; }
 
 body {
   background: url(../images/background-body.jpg) no-repeat center center fixed;
@@ -384,6 +380,10 @@ ul {
   vertical-align: -2px; }
 
 a {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   color: #2acd7e;
   text-decoration: none; }
   .contentWrapper p a {
@@ -420,6 +420,21 @@ a[href="tel:0442002020"]:hover:before {
 .teaser img {
   display: block;
   margin: 0 auto 20px; }
+
+#container {
+  position: fixed; }
+  #container img {
+    display: block; }
+
+.scene {
+  max-width: 100%;
+  min-width: 980px; }
+
+.layer:nth-child(1) {
+  opacity: 1; }
+
+.layer:nth-child(2) {
+  opacity: 1; }
 
 @media desktop, only screen and (max-width: 1040px) {
   h1 {
