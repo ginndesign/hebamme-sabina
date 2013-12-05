@@ -243,7 +243,19 @@ a{
 		color: $corporateColorViolet;
 	}
 }
-
+a[href="tel:0442002020"]:hover:before{
+	content: "044 200 20 20";
+	left: 0;
+	margin: 53px 0 0 72px;
+	position: absolute;
+	display: block;
+	background: $white;
+	color: $corporateLinkColor;
+	font-family: 'NovecentoBook';
+	font-size: $baseFontSize*1.333;
+	line-height: 1em;
+	padding: $marginMedium/2;
+}
 // Bilder
 
 img{

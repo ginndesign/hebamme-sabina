@@ -368,6 +368,19 @@ a {
   a:hover {
     color: #622181; }
 
+a[href="tel:0442002020"]:hover:before {
+  content: "044 200 20 20";
+  left: 0;
+  margin: 53px 0 0 72px;
+  position: absolute;
+  display: block;
+  background: white;
+  color: #2acd7e;
+  font-family: 'NovecentoBook';
+  font-size: 15.996px;
+  line-height: 1em;
+  padding: 10px; }
+
 .logo img {
   width: 241px; }
 .teaser img {
