@@ -162,6 +162,42 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   [class*='col-']:last-of-type {
     padding-right: 0; } }
+.layer img {
+  display: block;
+  width: 100%; }
+
+.scene {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0; }
+
+.layer:nth-child(1) {
+  opacity: 0.15; }
+
+.layer:nth-child(2) {
+  opacity: 0.30; }
+
+.layer:nth-child(3) {
+  opacity: 0.45; }
+
+.layer:nth-child(4) {
+  opacity: 0.60; }
+
+.layer:nth-child(5) {
+  opacity: 0.75; }
+
+.layer:nth-child(6) {
+  opacity: 0.90; }
+
+.content {
+  z-index: 100;
+  position: absolute;
+  top: 500px;
+  display: block;
+  height: 300px;
+  width: 100%;
+  background: red; }
+
 @font-face {
   font-family: "Novecento";
   src: url('../fonts/novecentowide-light-webfont.ttf') format('truetype'), url('../fonts/novecentowide-light-webfont.otf') format('opentype'), url('../fonts/novecentowide-light-webfont.woff') format('woff'), url('../fonts/novecentowide-light-webfont.eot') format('embedded-opentype'), url('../fonts/novecentowide-light-webfont.svg') format('svg'); }
@@ -214,7 +250,7 @@ header {
 .headerWrapper, .contentWrapper {
   margin-right: -20px; }
 
-.contentWrapper .content {
+.contentWrapper .gridContent {
   background: white;
   padding: 20px; }
 
@@ -239,9 +275,7 @@ nav#menu {
 .panel {
   position: fixed;
   left: -15.625em;
-  /*or width of your navigation panel*/
-  width: 15.625em;
-  /*should match the above value*/ }
+  width: 15.625em; }
 
 .menu-link {
   position: fixed;

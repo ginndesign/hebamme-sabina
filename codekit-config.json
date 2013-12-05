@@ -2,15 +2,26 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8403",
   "files" : {
-    "\/images\/icon-rueckbildung.png" : {
+    "\/images\/logo-sabina-oertli-hebamme-zuerich-hover.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/icon-rueckbildung.png",
+      "inputAbbreviatedPath" : "\/images\/logo-sabina-oertli-hebamme-zuerich-hover.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/icon-rueckbildung.png",
-      "initialSize" : 5160,
+      "outputAbbreviatedPath" : "\/images\/logo-sabina-oertli-hebamme-zuerich-hover.png",
+      "initialSize" : 17691,
+      "fileType" : 8192
+    },
+    "\/images\/layer6.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/layer6.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/layer6.png",
+      "initialSize" : 15583,
       "fileType" : 8192
     },
     "\/stylesheets\/print.css" : {
@@ -21,114 +32,6 @@
       "inputAbbreviatedPath" : "\/stylesheets\/print.css",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
-    },
-    "\/sass\/screen.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/screen.scss",
-      "outputStyle" : 2,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/stylesheets\/screen.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/javascripts\/html5.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/javascripts\/html5.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/javascripts\/html5-ck.js",
-      "fileType" : 64
-    },
-    "\/stylesheets\/ie.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/stylesheets\/ie.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
-    "\/images\/logo-sabina-oertli-hebamme-zuerich.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/logo-sabina-oertli-hebamme-zuerich.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/logo-sabina-oertli-hebamme-zuerich.png",
-      "initialSize" : 16845,
-      "fileType" : 8192
-    },
-    "\/javascripts\/Hyphenator.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/javascripts\/Hyphenator.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/javascripts\/Hyphenator-ck.js",
-      "fileType" : 64
-    },
-    "\/javascripts\/big-slide-ck.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/javascripts\/big-slide-ck.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/javascripts\/big-slide-ck-ck.js",
-      "fileType" : 64
-    },
-    "\/hyphens.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/hyphens.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/javascripts\/big-slide.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/javascripts\/big-slide.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/javascripts\/big-slide-ck.js",
-      "fileType" : 64
-    },
-    "\/images\/background-body.jpg" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/background-body.jpg",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/background-body.jpg",
-      "initialSize" : 1196356,
-      "fileType" : 4096
-    },
-    "\/sass\/_variables.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/_variables.scss",
-      "outputStyle" : 2,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/stylesheets\/_variables.css",
-      "fileType" : 4,
-      "debugStyle" : 0
     },
     "\/images\/icon-schwangerschaft.png" : {
       "ignoreWasSetByUser" : 0,
@@ -153,6 +56,18 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/sass\/screen.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/sass\/screen.scss",
+      "outputStyle" : 2,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/stylesheets\/screen.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
     "\/sass\/_grid.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -165,15 +80,79 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/images\/icon-geburtsvorbereitung.png" : {
+    "\/images\/logo-sabina-oertli-hebamme-zuerich.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/icon-geburtsvorbereitung.png",
+      "inputAbbreviatedPath" : "\/images\/logo-sabina-oertli-hebamme-zuerich.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/icon-geburtsvorbereitung.png",
-      "initialSize" : 10140,
+      "outputAbbreviatedPath" : "\/images\/logo-sabina-oertli-hebamme-zuerich.png",
+      "initialSize" : 16845,
+      "fileType" : 8192
+    },
+    "\/images\/icon-menu.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/icon-menu.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/icon-menu.png",
+      "initialSize" : 2915,
+      "fileType" : 8192
+    },
+    "\/javascripts\/html5.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/javascripts\/html5.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/javascripts\/html5-ck.js",
+      "fileType" : 64
+    },
+    "\/javascripts\/jquery.parallax.min.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/javascripts\/jquery.parallax.min.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/javascripts\/jquery.parallax.min-ck.js",
+      "fileType" : 64
+    },
+    "\/javascripts\/Hyphenator.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/javascripts\/Hyphenator.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/javascripts\/Hyphenator-ck.js",
+      "fileType" : 64
+    },
+    "\/stylesheets\/screen.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/stylesheets\/screen.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
+    "\/images\/icon-rueckbildung.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/icon-rueckbildung.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/icon-rueckbildung.png",
+      "initialSize" : 5160,
       "fileType" : 8192
     },
     "\/config.rb" : {
@@ -185,35 +164,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 32768
     },
-    "\/images\/icon-wochenbett.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/icon-wochenbett.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/icon-wochenbett.png",
-      "initialSize" : 8861,
-      "fileType" : 8192
-    },
-    "\/stylesheets\/screen.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/stylesheets\/screen.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
-    "\/index.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/index.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/images\/Logo.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -223,6 +173,91 @@
       "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/Logo.png",
       "initialSize" : 16845,
+      "fileType" : 8192
+    },
+    "\/sass\/_variables.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/sass\/_variables.scss",
+      "outputStyle" : 2,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/stylesheets\/_variables.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/hyphens.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/hyphens.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/images\/layer1.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/layer1.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/layer1.png",
+      "initialSize" : 7669,
+      "fileType" : 8192
+    },
+    "\/javascripts\/big-slide-ck.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/javascripts\/big-slide-ck.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/javascripts\/big-slide-ck-ck.js",
+      "fileType" : 64
+    },
+    "\/stylesheets\/ie.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/stylesheets\/ie.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
+    "\/images\/background-body.jpg" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/background-body.jpg",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/background-body.jpg",
+      "initialSize" : 1196356,
+      "fileType" : 4096
+    },
+    "\/images\/icon-geburtsvorbereitung.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/icon-geburtsvorbereitung.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/icon-geburtsvorbereitung.png",
+      "initialSize" : 10140,
+      "fileType" : 8192
+    },
+    "\/images\/layer2.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/layer2.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/layer2.png",
+      "initialSize" : 9217,
       "fileType" : 8192
     },
     "\/sass\/_mixin.scss" : {
@@ -237,15 +272,102 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/images\/logo-sabina-oertli-hebamme-zuerich-hover.png" : {
+    "\/images\/icon-wochenbett.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/logo-sabina-oertli-hebamme-zuerich-hover.png",
+      "inputAbbreviatedPath" : "\/images\/icon-wochenbett.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/logo-sabina-oertli-hebamme-zuerich-hover.png",
-      "initialSize" : 17691,
+      "outputAbbreviatedPath" : "\/images\/icon-wochenbett.png",
+      "initialSize" : 8861,
+      "fileType" : 8192
+    },
+    "\/index.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/index.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/images\/layer3.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/layer3.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/layer3.png",
+      "initialSize" : 10786,
+      "fileType" : 8192
+    },
+    "\/images\/icon-menu-hover.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/icon-menu-hover.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/icon-menu-hover.png",
+      "initialSize" : 2916,
+      "fileType" : 8192
+    },
+    "\/sass\/_parallax-header.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/sass\/_parallax-header.scss",
+      "outputStyle" : 2,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/stylesheets\/_parallax-header.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/javascripts\/parallax.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/javascripts\/parallax.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/javascripts\/parallax-ck.js",
+      "fileType" : 64
+    },
+    "\/javascripts\/big-slide.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/javascripts\/big-slide.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/javascripts\/big-slide-ck.js",
+      "fileType" : 64
+    },
+    "\/images\/layer4.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/layer4.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/layer4.png",
+      "initialSize" : 12215,
+      "fileType" : 8192
+    },
+    "\/images\/layer5.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/layer5.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/layer5.png",
+      "initialSize" : 13874,
       "fileType" : 8192
     },
     "\/sass\/print.scss" : {
@@ -259,17 +381,6 @@
       "outputAbbreviatedPath" : "\/stylesheets\/print.css",
       "fileType" : 4,
       "debugStyle" : 0
-    },
-    "\/images\/icon-menu.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/icon-menu.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/icon-menu.png",
-      "initialSize" : 2915,
-      "fileType" : 8192
     }
   },
   "manualImportLinks" : [

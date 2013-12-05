@@ -8,6 +8,7 @@
  @import "mixin";
  @import "variables";
  @import "grid";
+ @import "parallax-header";
 
  @include font-face("Novecento", font-files("novecentowide-light-webfont.ttf", "novecentowide-light-webfont.otf", "novecentowide-light-webfont.woff", "novecentowide-light-webfont.eot", "novecentowide-light-webfont.svg"));
  @include font-face("NovecentoBook", font-files("novecentowide-book-webfont.ttf", "novecentowide-book-webfont.otf", "novecentowide-book-webfont.woff", "novecentowide-book-webfont.eot", "novecentowide-book-webfont.svg"));
@@ -42,7 +43,7 @@ header {
 	margin-right: -20px;
 }
 .contentWrapper{
-	.content{
+	.gridContent{
 		background: white;
 		padding: $marginMedium;
 	}
@@ -74,8 +75,8 @@ nav {
 }
 .panel {
 	position: fixed;
-	left: -15.625em; /*or width of your navigation panel*/
-	width: 15.625em; /*should match the above value*/
+	left: -15.625em;
+	width: 15.625em;
 }
 .menu-link {
 	position: fixed;
