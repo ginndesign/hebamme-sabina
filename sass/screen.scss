@@ -52,7 +52,6 @@ footer {
 	text-align: center;
 	margin: $marginMedium 0;
 }
-
 // Navigation
 nav {
 	footer & {
@@ -61,6 +60,31 @@ nav {
 		padding: $marginMedium/4 0;
 		margin: 0 0 $marginMedium;
 	}
+	&#menu{
+		padding: $marginMedium $marginBig;
+		background: $corporateLinkColor;
+		text-align: center;
+		a{
+			color: $white;
+			&:hover {
+				color: $corporateColorViolet;
+			}
+		}
+	}
+}
+.panel {
+	position: fixed;
+	left: -15.625em; /*or width of your navigation panel*/
+	width: 15.625em; /*should match the above value*/
+}
+.menu-link {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 54px;
+	height: 51px;
+	display: block;
+	background-image: url(../images/icon-menu.png);
 }
 // Typografie
 h1, h2, h3, h4, h5, h6, p, li{
@@ -73,6 +97,13 @@ h1{
 	font-size: $baseFontSize*5;
 	letter-spacing: $letterSpacingHeadline;
 	margin-bottom: $marginMedium;
+	#menu &{
+		font-family: "NovecentoBook";
+		font-size: $baseFontSize*2.333;
+		color: $white;
+		padding-bottom: $marginMedium;
+		border-bottom: $whiteBorder;
+	}
 }
 h2{
 	font-family:"CardoItalic";
@@ -127,8 +158,29 @@ ul{
 			margin: 0 $marginMedium/4 0 $marginMedium*1.5;
 		}
 	}
+	#menu &{
+		border-bottom: $whiteBorder;
+		&:last-of-type {
+			font-family: 'Entypo';
+			font-size: $baseFontSize*4;
+			padding: $marginMedium/2 0;
+			li{
+				display: inline-block;
+				line-height: 0.8em;
+				// background: red;
+				height: 40px;
+				padding: 0 $marginMedium 0 $marginMedium/2;
+				border-right: $whiteBorder;
+				&:last-of-type {
+					border: none;
+				}
+			}
+		}
+	}
+	#menu & li{
+		padding-bottom: $marginMedium;
+	}
 }
-
 // Icons
 
 .home {
@@ -191,7 +243,19 @@ a{
 		color: $corporateColorViolet;
 	}
 }
-
+a[href="tel:0442002020"]:hover:before{
+	content: "044 200 20 20";
+	left: 0;
+	margin: 53px 0 0 72px;
+	position: absolute;
+	display: block;
+	background: $white;
+	color: $corporateLinkColor;
+	font-family: 'NovecentoBook';
+	font-size: $baseFontSize*1.333;
+	line-height: 1em;
+	padding: $marginMedium/2;
+}
 // Bilder
 
 img{
@@ -241,7 +305,7 @@ img{
 		}
 	}
 	.headerWrapper, .contentWrapper{
-	margin-right: 0;
+		margin-right: 0;
 	}
 	header{
 		padding: $marginSmall 0;

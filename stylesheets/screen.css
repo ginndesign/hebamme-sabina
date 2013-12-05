@@ -65,6 +65,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding-right: 20px; }
 
 .grid {
+  position: relative;
   width: 100%;
   max-width: 1240px;
   min-width: 755px;
@@ -226,6 +227,30 @@ footer nav {
   border-bottom: 1px solid white;
   padding: 5px 0;
   margin: 0 0 20px; }
+nav#menu {
+  padding: 20px 35px;
+  background: #2acd7e;
+  text-align: center; }
+  nav#menu a {
+    color: white; }
+    nav#menu a:hover {
+      color: #622181; }
+
+.panel {
+  position: fixed;
+  left: -15.625em;
+  /*or width of your navigation panel*/
+  width: 15.625em;
+  /*should match the above value*/ }
+
+.menu-link {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 54px;
+  height: 51px;
+  display: block;
+  background-image: url(../images/icon-menu.png); }
 
 h1, h2, h3, h4, h5, h6, p, li {
   line-height: 1.3em;
@@ -236,6 +261,12 @@ h1 {
   font-size: 60px;
   letter-spacing: 0.1rem;
   margin-bottom: 20px; }
+  #menu h1 {
+    font-family: "NovecentoBook";
+    font-size: 27.996px;
+    color: white;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white; }
 
 h2 {
   font-family: "CardoItalic";
@@ -280,6 +311,22 @@ ul {
     letter-spacing: 0.05rem; }
     nav ul li:before, nav ul li a:before {
       margin: 0 5px 0 30px; }
+  #menu ul {
+    border-bottom: 1px solid white; }
+    #menu ul:last-of-type {
+      font-family: 'Entypo';
+      font-size: 48px;
+      padding: 10px 0; }
+      #menu ul:last-of-type li {
+        display: inline-block;
+        line-height: 0.8em;
+        height: 40px;
+        padding: 0 20px 0 10px;
+        border-right: 1px solid white; }
+        #menu ul:last-of-type li:last-of-type {
+          border: none; }
+  #menu ul li {
+    padding-bottom: 20px; }
 
 .home:before {
   content: "\2302"; }
@@ -320,6 +367,19 @@ a {
       border: 1px solid #622181; }
   a:hover {
     color: #622181; }
+
+a[href="tel:0442002020"]:hover:before {
+  content: "044 200 20 20";
+  left: 0;
+  margin: 53px 0 0 72px;
+  position: absolute;
+  display: block;
+  background: white;
+  color: #2acd7e;
+  font-family: 'NovecentoBook';
+  font-size: 15.996px;
+  line-height: 1em;
+  padding: 10px; }
 
 .logo img {
   width: 241px; }
