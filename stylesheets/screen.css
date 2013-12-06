@@ -65,6 +65,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding-right: 20px; }
 
 .grid {
+  position: relative;
   width: 100%;
   max-width: 1240px;
   min-width: 755px;
@@ -161,6 +162,42 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
   [class*='col-']:last-of-type {
     padding-right: 0; } }
+.layer img {
+  display: block;
+  width: 100%; }
+
+.scene {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0; }
+
+.layer:nth-child(1) {
+  opacity: 0.15; }
+
+.layer:nth-child(2) {
+  opacity: 0.30; }
+
+.layer:nth-child(3) {
+  opacity: 0.45; }
+
+.layer:nth-child(4) {
+  opacity: 0.60; }
+
+.layer:nth-child(5) {
+  opacity: 0.75; }
+
+.layer:nth-child(6) {
+  opacity: 0.90; }
+
+.content {
+  z-index: 100;
+  position: absolute;
+  top: 500px;
+  display: block;
+  height: 300px;
+  width: 100%;
+  background: red; }
+
 @font-face {
   font-family: "Novecento";
   src: url('../fonts/novecentowide-light-webfont.ttf') format('truetype'), url('../fonts/novecentowide-light-webfont.otf') format('opentype'), url('../fonts/novecentowide-light-webfont.woff') format('woff'), url('../fonts/novecentowide-light-webfont.eot') format('embedded-opentype'), url('../fonts/novecentowide-light-webfont.svg') format('svg'); }
@@ -183,11 +220,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   box-sizing: border-box;
   text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.005);
   -webkit-font-smoothing: antialiased;
-  font-size: 12px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  font-size: 12px; }
 
 body {
   background: url(../images/background-body.jpg) no-repeat center center fixed;
@@ -213,7 +246,7 @@ header {
 .headerWrapper, .contentWrapper {
   margin-right: -20px; }
 
-.contentWrapper .content {
+.contentWrapper .gridContent {
   background: white;
   padding: 20px; }
 
@@ -226,6 +259,28 @@ footer nav {
   border-bottom: 1px solid white;
   padding: 5px 0;
   margin: 0 0 20px; }
+nav#menu {
+  padding: 20px 35px;
+  background: #2acd7e;
+  text-align: center; }
+  nav#menu a {
+    color: white; }
+    nav#menu a:hover {
+      color: #622181; }
+
+.panel {
+  position: fixed;
+  left: -15.625em;
+  width: 15.625em; }
+
+.menu-link {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 54px;
+  height: 51px;
+  display: block;
+  background-image: url(../images/icon-menu.png); }
 
 h1, h2, h3, h4, h5, h6, p, li {
   line-height: 1.3em;
@@ -236,6 +291,12 @@ h1 {
   font-size: 60px;
   letter-spacing: 0.1rem;
   margin-bottom: 20px; }
+  #menu h1 {
+    font-family: "NovecentoBook";
+    font-size: 27.996px;
+    color: white;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white; }
 
 h2 {
   font-family: "CardoItalic";
@@ -280,6 +341,22 @@ ul {
     letter-spacing: 0.05rem; }
     nav ul li:before, nav ul li a:before {
       margin: 0 5px 0 30px; }
+  #menu ul {
+    border-bottom: 1px solid white; }
+    #menu ul:last-of-type {
+      font-family: 'Entypo';
+      font-size: 48px;
+      padding: 10px 0; }
+      #menu ul:last-of-type li {
+        display: inline-block;
+        line-height: 0.8em;
+        height: 40px;
+        padding: 0 20px 0 10px;
+        border-right: 1px solid white; }
+        #menu ul:last-of-type li:last-of-type {
+          border: none; }
+  #menu ul li {
+    padding-bottom: 20px; }
 
 .home:before {
   content: "\2302"; }
@@ -303,6 +380,10 @@ ul {
   vertical-align: -2px; }
 
 a {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   color: #2acd7e;
   text-decoration: none; }
   .contentWrapper p a {
@@ -310,20 +391,50 @@ a {
     margin-top: 7px;
     padding: 2px 5px;
     border: 1px solid #2acd7e; }
-    .contentWrapper p a:hover {
+    .contentWrapper p a:hover, .contentWrapper p a:focus {
       color: white;
       background: #2acd7e; }
+    .contentWrapper p a:focus {
+      display: block; }
     .contentWrapper p a:active {
       background: #622181;
       border: 1px solid #622181; }
   a:hover {
     color: #622181; }
 
+a[href="tel:0442002020"]:hover:before {
+  content: "044 200 20 20";
+  left: 0;
+  margin: 53px 0 0 72px;
+  position: absolute;
+  display: block;
+  background: white;
+  color: #2acd7e;
+  font-family: 'NovecentoBook';
+  font-size: 15.996px;
+  line-height: 1em;
+  padding: 10px; }
+
 .logo img {
   width: 241px; }
 .teaser img {
   display: block;
   margin: 0 auto 20px; }
+
+#container {
+  position: fixed; }
+  #container img {
+    display: block; }
+
+.scene {
+  max-width: 100%;
+  min-width: 980px; }
+
+.layer:nth-child(1) {
+  opacity: 1; }
+
+.layer:nth-child(2) {
+  opacity: 1; }
 
 @media desktop, only screen and (max-width: 1040px) {
   h1 {
