@@ -11,4 +11,3 @@ includes/_navigation.jade
 includes/_parallax.jade
 includes/_scripts.jade
 codekit-config.json
-index.html
