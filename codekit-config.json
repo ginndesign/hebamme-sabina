@@ -233,17 +233,6 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/images\/layer2.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/layer2.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/layer2.png",
-      "initialSize" : 9217,
-      "fileType" : 8192
-    },
     "\/includes\/_head.jade" : {
       "ignoreWasSetByUser" : 1,
       "ignore" : 0,
@@ -254,6 +243,17 @@
       "compileDebug" : 1,
       "outputAbbreviatedPath" : "\/includes\/_head.html",
       "fileType" : 512
+    },
+    "\/images\/layer2.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/layer2.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/layer2.png",
+      "initialSize" : 9217,
+      "fileType" : 8192
     },
     "\/includes\/_parallax.jade" : {
       "ignoreWasSetByUser" : 1,
@@ -321,7 +321,7 @@
     },
     "\/Vorlage.jade" : {
       "ignoreWasSetByUser" : 1,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/Vorlage.jade",
