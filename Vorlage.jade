@@ -1,4 +1,16 @@
-include includes/_head.html
+!!! 5
+html(lang='de')
+  head
+    meta(http-equiv='content-type', content='text/html; charset=UTF-8')
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='viewport', content='width=device-width, user-scalable=no')
+    title Sabina Oertli – Hebamme aus Zürich
+    link(rel='stylesheet', type='text/css', href='stylesheets/screen.css')
+    //if lt IE 9
+      script(src='javascripts/html5.js')
+    //if lte IE 8
+      link(href='http://fonts.googleapis.com/css?family=Open+Sans:300', rel='stylesheet', type='text/css')
+      link(href='http://fonts.googleapis.com/css?family=Open+Sans:700', rel='stylesheet', type='text/css')
   body.hyphenate
     #container.container
       ul#scene.scene
