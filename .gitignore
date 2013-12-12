@@ -11,5 +11,4 @@ includes/_head.jade
 includes/_navigation.jade
 includes/_parallax.jade
 includes/_scripts.jade
-index.hrml
 about.html
