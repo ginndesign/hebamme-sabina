@@ -2,31 +2,13 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8403",
   "files" : {
-    "\/_doctype.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_doctype.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/_IE.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_IE.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/images\/logo-sabina-oertli-hebamme-zuerich-hover.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/images\/logo-sabina-oertli-hebamme-zuerich-hover.png",
-      "processed" : 1,
+      "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/logo-sabina-oertli-hebamme-zuerich-hover.png",
       "initialSize" : 17691,
       "fileType" : 8192
@@ -37,32 +19,19 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/images\/layer6.png",
-      "processed" : 1,
+      "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/layer6.png",
       "initialSize" : 15583,
       "fileType" : 8192
     },
-    "\/images\/icon-schwangerschaft.png" : {
+    "\/stylesheets\/print.css" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/icon-schwangerschaft.png",
-      "processed" : 1,
-      "outputAbbreviatedPath" : "\/images\/icon-schwangerschaft.png",
-      "initialSize" : 5854,
-      "fileType" : 8192
-    },
-    "\/includes\/_parallax.jade" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/includes\/_parallax.jade",
-      "outputStyle" : 0,
-      "compileDebug" : 1,
-      "outputAbbreviatedPath" : "\/_parallax.html",
-      "fileType" : 512
+      "inputAbbreviatedPath" : "\/stylesheets\/print.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/sass\/ie.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -76,14 +45,16 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/stylesheets\/print.css" : {
+    "\/images\/icon-schwangerschaft.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/stylesheets\/print.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
+      "inputAbbreviatedPath" : "\/images\/icon-schwangerschaft.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/icon-schwangerschaft.png",
+      "initialSize" : 5854,
+      "fileType" : 8192
     },
     "\/sass\/screen.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -115,21 +86,10 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/images\/logo-sabina-oertli-hebamme-zuerich.png",
-      "processed" : 1,
+      "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/logo-sabina-oertli-hebamme-zuerich.png",
       "initialSize" : 16845,
       "fileType" : 8192
-    },
-    "\/includes\/_scripts.jade" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/includes\/_scripts.jade",
-      "outputStyle" : 0,
-      "compileDebug" : 1,
-      "outputAbbreviatedPath" : "\/_scripts.html",
-      "fileType" : 512
     },
     "\/images\/icon-menu.png" : {
       "ignoreWasSetByUser" : 0,
@@ -137,7 +97,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/images\/icon-menu.png",
-      "processed" : 1,
+      "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/icon-menu.png",
       "initialSize" : 2915,
       "fileType" : 8192
@@ -159,7 +119,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/images\/Pattern.png",
-      "processed" : 1,
+      "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/Pattern.png",
       "initialSize" : 21671,
       "fileType" : 8192
@@ -190,7 +150,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/images\/icon-rueckbildung.png",
-      "processed" : 1,
+      "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/icon-rueckbildung.png",
       "initialSize" : 5160,
       "fileType" : 8192
@@ -210,7 +170,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/images\/Logo.png",
-      "processed" : 1,
+      "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/Logo.png",
       "initialSize" : 16845,
       "fileType" : 8192
@@ -226,15 +186,6 @@
       "outputAbbreviatedPath" : "\/javascripts\/parallax.min-ck.js",
       "fileType" : 64
     },
-    "\/_parallax.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_parallax.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/sass\/_variables.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -246,6 +197,15 @@
       "outputAbbreviatedPath" : "\/stylesheets\/_variables.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/hyphens.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/hyphens.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/javascripts\/hebamme-sabina-ck.js" : {
       "ignoreWasSetByUser" : 0,
@@ -264,21 +224,10 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/images\/layer1.png",
-      "processed" : 1,
+      "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/layer1.png",
       "initialSize" : 7669,
       "fileType" : 8192
-    },
-    "\/includes\/_head.jade" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/includes\/_head.jade",
-      "outputStyle" : 0,
-      "compileDebug" : 1,
-      "outputAbbreviatedPath" : "\/_head.html",
-      "fileType" : 512
     },
     "\/javascripts\/big-slide-ck.js" : {
       "ignoreWasSetByUser" : 0,
@@ -315,20 +264,20 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/images\/background-body.jpg",
-      "processed" : 1,
+      "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/background-body.jpg",
       "initialSize" : 1196356,
       "fileType" : 4096
     },
-    "\/images\/icon-wochenbett.png" : {
+    "\/images\/icon-geburtsvorbereitung.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/icon-wochenbett.png",
-      "processed" : 1,
-      "outputAbbreviatedPath" : "\/images\/icon-wochenbett.png",
-      "initialSize" : 8861,
+      "inputAbbreviatedPath" : "\/images\/icon-geburtsvorbereitung.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/icon-geburtsvorbereitung.png",
+      "initialSize" : 10140,
       "fileType" : 8192
     },
     "\/images\/layer2.png" : {
@@ -337,7 +286,7 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/images\/layer2.png",
-      "processed" : 1,
+      "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/layer2.png",
       "initialSize" : 9217,
       "fileType" : 8192
@@ -354,15 +303,15 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/images\/icon-geburtsvorbereitung.png" : {
+    "\/images\/icon-wochenbett.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/icon-geburtsvorbereitung.png",
-      "processed" : 1,
-      "outputAbbreviatedPath" : "\/images\/icon-geburtsvorbereitung.png",
-      "initialSize" : 10140,
+      "inputAbbreviatedPath" : "\/images\/icon-wochenbett.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/icon-wochenbett.png",
+      "initialSize" : 8861,
       "fileType" : 8192
     },
     "\/index.html" : {
@@ -374,47 +323,16 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/_head.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_head.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/images\/layer3.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/layer3.png",
-      "processed" : 1,
-      "outputAbbreviatedPath" : "\/images\/layer3.png",
-      "initialSize" : 10786,
-      "fileType" : 8192
-    },
     "\/images\/icon-menu-hover.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/images\/icon-menu-hover.png",
-      "processed" : 1,
+      "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/icon-menu-hover.png",
       "initialSize" : 2916,
       "fileType" : 8192
-    },
-    "\/includes\/_navigation.jade" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/includes\/_navigation.jade",
-      "outputStyle" : 0,
-      "compileDebug" : 1,
-      "outputAbbreviatedPath" : "\/_navigation.html",
-      "fileType" : 512
     },
     "\/javascripts\/hebamme-sabina.js" : {
       "ignoreWasSetByUser" : 0,
@@ -426,6 +344,29 @@
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/javascripts\/hebamme-sabina-ck.js",
       "fileType" : 64
+    },
+    "\/images\/layer3.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/layer3.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/layer3.png",
+      "initialSize" : 10786,
+      "fileType" : 8192
+    },
+    "\/sass\/_parallax-header.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/sass\/_parallax-header.scss",
+      "outputStyle" : 2,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/stylesheets\/_parallax-header.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/javascripts\/parallax.js" : {
       "ignoreWasSetByUser" : 0,
@@ -449,17 +390,14 @@
       "outputAbbreviatedPath" : "\/javascripts\/big-slide-ck.js",
       "fileType" : 64
     },
-    "\/sass\/_parallax-header.scss" : {
+    "\/simple.html" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/_parallax-header.scss",
-      "outputStyle" : 2,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/stylesheets\/_parallax-header.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/simple.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/images\/layer4.png" : {
       "ignoreWasSetByUser" : 0,
@@ -467,41 +405,10 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/images\/layer4.png",
-      "processed" : 1,
+      "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/layer4.png",
       "initialSize" : 12215,
       "fileType" : 8192
-    },
-    "\/includes\/_doctype.jade" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/includes\/_doctype.jade",
-      "outputStyle" : 0,
-      "compileDebug" : 1,
-      "outputAbbreviatedPath" : "\/_doctype.html",
-      "fileType" : 512
-    },
-    "\/Vorlage.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/Vorlage.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/Vorlage.jade" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/Vorlage.jade",
-      "outputStyle" : 0,
-      "compileDebug" : 1,
-      "outputAbbreviatedPath" : "\/Vorlage.html",
-      "fileType" : 512
     },
     "\/images\/Pattern2.png" : {
       "ignoreWasSetByUser" : 0,
@@ -509,31 +416,9 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/images\/Pattern2.png",
-      "processed" : 1,
+      "processed" : 0,
       "outputAbbreviatedPath" : "\/images\/Pattern2.png",
       "initialSize" : 207677,
-      "fileType" : 8192
-    },
-    "\/includes\/_IE.jade" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/includes\/_IE.jade",
-      "outputStyle" : 0,
-      "compileDebug" : 1,
-      "outputAbbreviatedPath" : "\/_IE.html",
-      "fileType" : 512
-    },
-    "\/images\/layer5.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/layer5.png",
-      "processed" : 1,
-      "outputAbbreviatedPath" : "\/images\/layer5.png",
-      "initialSize" : 13874,
       "fileType" : 8192
     },
     "\/sass\/print.scss" : {
@@ -547,6 +432,17 @@
       "outputAbbreviatedPath" : "\/stylesheets\/print.css",
       "fileType" : 4,
       "debugStyle" : 0
+    },
+    "\/images\/layer5.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/layer5.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/layer5.png",
+      "initialSize" : 13874,
+      "fileType" : 8192
     }
   },
   "manualImportLinks" : [
