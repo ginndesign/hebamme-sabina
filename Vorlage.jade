@@ -1,39 +1,9 @@
-!!! 5
+include includes/_doctype
 html(lang='de')
-  head
-    meta(http-equiv='content-type', content='text/html; charset=UTF-8')
-    meta(name='apple-mobile-web-app-capable', content='yes')
-    meta(name='viewport', content='width=device-width, user-scalable=no')
-    title Sabina Oertli – Hebamme aus Zürich
-    link(rel='stylesheet', type='text/css', href='stylesheets/screen.css')
-    //if lt IE 9
-      script(src='javascripts/html5.js')
-    //if lte IE 8
-      link(href='http://fonts.googleapis.com/css?family=Open+Sans:300', rel='stylesheet', type='text/css')
-      link(href='http://fonts.googleapis.com/css?family=Open+Sans:700', rel='stylesheet', type='text/css')
+  include includes/_head
   body.hyphenate
-    #container.container
-      ul#scene.scene
-        li.layer(data-depth='0.20')
-          img(src='images/Pattern2.png')
-        li.layer(data-depth='0.10')
-          img(src='images/Pattern.png')
-    nav#menu.panel(role='navigation')
-      h1 Sabina Oertli
-      ul
-        li
-          a(href='#') Home
-        li
-          a(href='#') Über mich
-        li
-          a(href='#') Angebot
-        li
-          a(href='#') Kontakt
-      ul
-        li
-          a(href='') &#9993;
-        li
-          a(href='tel:0442002020') &#128222;
+    include includes/_parallax
+    include includes/_navigation
     .grid.grid-pad.push
       .headerWrapper
         .col-1-1
@@ -80,25 +50,5 @@ html(lang='de')
             p
               a(href='#') Mehr Infos…
       .col-1-1
-        footer.gridContent
-          nav
-            ul
-              li
-                a.home(href='') Home
-              li
-                a.ueber(href='') Über mich
-              li
-                a.angebot(href='') Angebot
-              li
-                a.kontakt(href='') Kontakt
-          h4 Sabina Oertli
-          ul
-            li.telefon 044 200 20 20
-            li
-              a.e-mail(href='') info@oertli.ch
-    // Scripts
-    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
-    script(src='javascripts/big-slide-ck.js')
-    script(src='javascripts/Hyphenator.js', type='text/javascript')
-    script(src='javascripts/parallax.min.js')
-    script(src='javascripts/hebamme-sabina-ck.js', type='text/javascript')
+        include includes/_footer
+    include includes/_scripts
