@@ -88,17 +88,14 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/sass\/_grid.scss" : {
+    "\/includes\/_doctype.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/_grid.scss",
-      "outputStyle" : 2,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/stylesheets\/_grid.css",
-      "fileType" : 4,
-      "debugStyle" : 0
+      "inputAbbreviatedPath" : "\/includes\/_doctype.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/images\/logo-sabina-oertli-hebamme-zuerich.png" : {
       "ignoreWasSetByUser" : 0,
@@ -111,14 +108,17 @@
       "initialSize" : 16845,
       "fileType" : 8192
     },
-    "\/includes\/_doctype.html" : {
+    "\/sass\/_grid.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/includes\/_doctype.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/sass\/_grid.scss",
+      "outputStyle" : 2,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/stylesheets\/_grid.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     },
     "\/includes\/_scripts.jade" : {
       "ignoreWasSetByUser" : 1,
@@ -206,15 +206,6 @@
       "initialSize" : 16845,
       "fileType" : 8192
     },
-    "\/config.rb" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/config.rb",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 32768
-    },
     "\/javascripts\/parallax.min.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -225,6 +216,15 @@
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/javascripts\/parallax.min-ck.js",
       "fileType" : 64
+    },
+    "\/config.rb" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/config.rb",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 32768
     },
     "\/sass\/_variables.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -269,17 +269,6 @@
       "initialSize" : 7669,
       "fileType" : 8192
     },
-    "\/includes\/_head.jade" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/includes\/_head.jade",
-      "outputStyle" : 0,
-      "compileDebug" : 1,
-      "outputAbbreviatedPath" : "\/includes\/_head.html",
-      "fileType" : 512
-    },
     "\/javascripts\/big-slide-ck.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -291,14 +280,25 @@
       "outputAbbreviatedPath" : "\/javascripts\/big-slide-ck-ck.js",
       "fileType" : 64
     },
-    "\/stylesheets\/styles-parallax.css" : {
+    "\/includes\/_scripts.html" : {
       "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/includes\/_scripts.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/includes\/_head.jade" : {
+      "ignoreWasSetByUser" : 1,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/stylesheets\/styles-parallax.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
+      "inputAbbreviatedPath" : "\/includes\/_head.jade",
+      "outputStyle" : 0,
+      "compileDebug" : 1,
+      "outputAbbreviatedPath" : "\/includes\/_head.html",
+      "fileType" : 512
     },
     "\/stylesheets\/ie.css" : {
       "ignoreWasSetByUser" : 0,
@@ -383,24 +383,24 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/includes\/_scripts.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/includes\/_scripts.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/images\/layer3.png" : {
+    "\/stylesheets\/styles-parallax.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/layer3.png",
+      "inputAbbreviatedPath" : "\/stylesheets\/styles-parallax.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
+    "\/images\/icon-menu-hover.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/icon-menu-hover.png",
       "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/layer3.png",
-      "initialSize" : 10786,
+      "outputAbbreviatedPath" : "\/images\/icon-menu-hover.png",
+      "initialSize" : 2916,
       "fileType" : 8192
     },
     "\/javascripts\/hebamme-sabina.js" : {
@@ -448,38 +448,16 @@
       "outputAbbreviatedPath" : "\/javascripts\/parallax-ck.js",
       "fileType" : 64
     },
-    "\/javascripts\/big-slide.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+    "\/index.jade" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/javascripts\/big-slide.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/javascripts\/big-slide-ck.js",
-      "fileType" : 64
-    },
-    "\/images\/icon-menu-hover.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/icon-menu-hover.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/icon-menu-hover.png",
-      "initialSize" : 2916,
-      "fileType" : 8192
-    },
-    "\/images\/layer4.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/images\/layer4.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/images\/layer4.png",
-      "initialSize" : 12215,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/index.jade",
+      "outputStyle" : 0,
+      "compileDebug" : 1,
+      "outputAbbreviatedPath" : "\/index.html",
+      "fileType" : 512
     },
     "\/includes\/_doctype.jade" : {
       "ignoreWasSetByUser" : 1,
@@ -492,16 +470,38 @@
       "outputAbbreviatedPath" : "\/includes\/_doctype.html",
       "fileType" : 512
     },
-    "\/index.jade" : {
-      "ignoreWasSetByUser" : 1,
-      "ignore" : 1,
+    "\/javascripts\/big-slide.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/index.jade",
-      "outputStyle" : 0,
-      "compileDebug" : 1,
-      "outputAbbreviatedPath" : "\/index.html",
-      "fileType" : 512
+      "inputAbbreviatedPath" : "\/javascripts\/big-slide.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/javascripts\/big-slide-ck.js",
+      "fileType" : 64
+    },
+    "\/images\/layer3.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/layer3.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/layer3.png",
+      "initialSize" : 10786,
+      "fileType" : 8192
+    },
+    "\/images\/layer4.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/images\/layer4.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/images\/layer4.png",
+      "initialSize" : 12215,
+      "fileType" : 8192
     },
     "\/includes\/_footer.jade" : {
       "ignoreWasSetByUser" : 1,
