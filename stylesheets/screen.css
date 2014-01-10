@@ -249,7 +249,10 @@ header {
 
 .contentWrapper .gridContent, .contentWrapper .gridContentTop {
   background: white;
-  padding: 20px; }
+  padding: 20px;
+  margin-top: 20px; }
+  .contentWrapper .gridContent:first-child, .contentWrapper .gridContentTop:first-child {
+    margin-top: 0; }
 .contentWrapper .gridContentTop {
   padding: 20px 0 0; }
   .contentWrapper .gridContentTop .grid {
@@ -257,12 +260,12 @@ header {
     margin-top: 14px;
     border-top: 1px solid #f6ede5;
     overflow: hidden; }
-  .contentWrapper .gridContentTop .col-1-4 {
+  .contentWrapper .gridContentTop .col-1-4, .contentWrapper .gridContentTop .col-1-1 {
     padding: 14px;
     margin-bottom: -2000px;
     padding-bottom: 2014px;
     border-left: 1px solid #f6ede5; }
-    .contentWrapper .gridContentTop .col-1-4:first-child {
+    .contentWrapper .gridContentTop .col-1-4:first-child, .contentWrapper .gridContentTop .col-1-1:first-child {
       border-left: none; }
 
 footer {
@@ -321,7 +324,9 @@ h2 {
 h3 {
   font-family: "CardoItalic";
   font-size: 27.996px;
-  margin-bottom: 14px; }
+  margin-top: 7px; }
+  h3:first-child {
+    margin-top: 0; }
   h3 span {
     font-size: 15.996px;
     color: #a8998b; }

@@ -45,6 +45,10 @@ header {
 	.gridContent, .gridContentTop{
 		background: white;
 		padding: $marginMedium;
+		margin-top: $marginMedium;
+		&:first-child{
+			margin-top: 0;
+		}
 	}
 	.gridContentTop{
 		padding: $marginMedium 0 0;
@@ -54,12 +58,11 @@ header {
 			border-top: $lightGreyBorder;
 			overflow: hidden;
 		}
-		.col-1-4{
+		.col-1-4, .col-1-1{
 			padding: $marginSmall;
 			margin-bottom: -2000px;
 			padding-bottom: 2014px;
-			border-left: $lightGreyBorder;
-			
+			border-left: $lightGreyBorder;			
 			&:first-child{
 				border-left: none;
 			}
@@ -131,7 +134,10 @@ h2{
 h3{
 	font-family:"CardoItalic";
 	font-size: $baseFontSize*2.333;
-	margin-bottom: $marginSmall;
+	margin-top: $marginSmall/2;
+	&:first-child{
+		margin-top: 0;
+	}
 	span{
 		font-size: $baseFontSize*1.333;
 		color: $corporateColorLauftext;
