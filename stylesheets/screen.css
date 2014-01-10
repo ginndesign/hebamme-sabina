@@ -434,24 +434,19 @@ ul {
   #menu ul li {
     padding-bottom: 20px; }
 
-.home:before {
+footer .home:before {
   content: "\2302"; }
-
-.ueber:before {
+footer .ueber:before {
   content: "\1F464"; }
-
-.angebot:before {
+footer .angebot:before {
   content: "\1F4BF"; }
-
-.kontakt:before {
+footer .kontakt:before {
   font-size: 36px;
   content: "\E724";
   vertical-align: -2px; }
-
-.telefon:before {
+footer .telefon:before {
   content: "\1F4DE"; }
-
-.e-mail:before {
+footer .e-mail:before {
   content: "\2709";
   vertical-align: -2px; }
 

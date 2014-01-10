@@ -276,39 +276,40 @@ ul{
 	}
 }
 // Icons
-
-.home {
-	&:before {
-		content:"\2302";
+footer {
+	.home {
+		&:before {
+			content:"\2302";
+		}
 	}
-}
-.ueber {
-	&:before {
-		content:"\1F464";
+	.ueber {
+		&:before {
+			content:"\1F464";
+		}
 	}
-}
-.angebot {
-	&:before {
-		content:"\1F4BF";
+	.angebot {
+		&:before {
+			content:"\1F4BF";
+		}
 	}
-}
-.kontakt {
-	&:before {
-		font-size:$baseFontSize*3;
-		content:"\E724";
-		vertical-align: -2px;
-
+	.kontakt {
+		&:before {
+			font-size:$baseFontSize*3;
+			content:"\E724";
+			vertical-align: -2px;
+	
+		}
 	}
-}
-.telefon {
-	&:before {
-		content:"\1F4DE";
+	.telefon {
+		&:before {
+			content:"\1F4DE";
+		}
 	}
-}
-.e-mail {
-	&:before {
-		content:"\2709";
-		vertical-align: -2px;
+	.e-mail {
+		&:before {
+			content:"\2709";
+			vertical-align: -2px;
+		}
 	}
 }
 // Links
