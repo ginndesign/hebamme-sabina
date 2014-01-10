@@ -42,12 +42,30 @@ header {
 	margin-right: -20px;
 }
 .contentWrapper{
-	.gridContent{
+	.gridContent, .gridContentTop{
 		background: white;
 		padding: $marginMedium;
 	}
+	.gridContentTop{
+		padding: $marginMedium 0 0;
+		.grid{
+			display: block;
+			margin-top: $marginSmall;
+			border-top: $lightGreyBorder;
+			overflow: hidden;
+		}
+		.col-1-4{
+			padding: $marginSmall;
+			margin-bottom: -2000px;
+			padding-bottom: 2014px;
+			border-left: $lightGreyBorder;
+			
+			&:first-child{
+				border-left: none;
+			}
+		}
+	}
 }
-
 footer {
 	text-align: center;
 	margin: $marginMedium 0;
@@ -120,6 +138,14 @@ h4{
 	font-size: $baseFontSize*1.5;
 	letter-spacing: $letterSpacingHeadline/2;
 	margin-bottom: $marginSmall/2;
+}
+h5{
+	font-family:"NovecentoBook";
+	font-size: $baseFontSize*2;
+	letter-spacing: $letterSpacingHeadline/2;
+	margin-bottom: $marginSmall/2;
+	color: $corporateColorLauftext;
+	text-align: center;	
 }
 p{
 	font-family: 'Open Sans', sans-serif;
