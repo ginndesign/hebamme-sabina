@@ -352,6 +352,10 @@ h3 {
     color: #947e6b; }
   .center h3 {
     font-size: 36px; }
+  .adresse h3 {
+    margin-top: 14px;
+    font-size: 24px;
+    color: #947e6b; }
 
 h4 {
   font-family: "NovecentoBook";
@@ -409,7 +413,8 @@ ul {
     margin: 0 5px 0 10px; }
   nav ul {
     font-family: 'NovecentoBook';
-    letter-spacing: 0.05rem; }
+    letter-spacing: 0.05rem;
+    margin-top: 0; }
     nav ul li:before, nav ul li a:before {
       margin: 0 5px 0 30px; }
   #menu ul {
@@ -457,17 +462,20 @@ a {
   transition: all 0.3s ease;
   color: #2acd7e;
   text-decoration: none; }
-  .contentWrapper p a, .contentWrapper h6 a {
+  .teaser p a, .contentWrapper h6 a {
     display: inline-block;
     margin-top: 7px;
+    margin-left: 14px;
     padding: 2px 5px;
     border: 1px solid #2acd7e; }
-    .contentWrapper p a:hover, .contentWrapper p a:focus, .contentWrapper h6 a:hover, .contentWrapper h6 a:focus {
+    .teaser p a:first-child, .contentWrapper h6 a:first-child {
+      margin-left: 0; }
+    .teaser p a:hover, .teaser p a:focus, .contentWrapper h6 a:hover, .contentWrapper h6 a:focus {
       color: white;
       background: #2acd7e; }
-    .contentWrapper p a:focus, .contentWrapper h6 a:focus {
+    .teaser p a:focus, .contentWrapper h6 a:focus {
       display: block; }
-    .contentWrapper p a:active, .contentWrapper h6 a:active {
+    .teaser p a:active, .contentWrapper h6 a:active {
       background: #622181;
       border: 1px solid #622181; }
   a:hover {
@@ -478,7 +486,7 @@ a {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     line-height: 1.5em;
-    font-size: 18px;
+    font-size: 21px;
     margin-bottom: 14px; }
 
 a[href="tel:0442002020"]:hover:before {

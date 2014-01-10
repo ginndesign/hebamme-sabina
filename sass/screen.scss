@@ -173,6 +173,11 @@ h3{
 	.center &{
 		font-size: $baseFontSize*3;
 	}
+	.adresse &{
+		margin-top: $marginSmall;
+		font-size: $baseFontSize*2;
+		color: $corporateColorLauftext;
+	}
 }
 h4{
 	font-family:"NovecentoBook";
@@ -242,6 +247,7 @@ ul{
 	nav &{
 		font-family: 'NovecentoBook';
 		letter-spacing: $letterSpacingHeadline/2;
+		margin-top: 0;
 		li:before, li a:before{
 			margin: 0 $marginMedium/4 0 $marginMedium*1.5;
 		}
@@ -311,11 +317,15 @@ a{
 	@include transition(all 0.3s ease);
 	color: $corporateLinkColor;
 	text-decoration: none;
-	.contentWrapper p &, .contentWrapper h6 &{
+	.teaser p &, .contentWrapper h6 &{
 		display: inline-block;
 		margin-top: $marginSmall/2;
+		margin-left: $marginSmall;
 		padding: $marginMedium/10 $marginMedium/4;
 		border: $linkBorder;
+		&:first-child{
+			margin-left: 0;
+		}
 		&:hover, &:focus{
 			color: $white;
 			background: $corporateLinkColor;
@@ -338,7 +348,7 @@ a{
 		font-family: 'Open Sans', sans-serif;
 		font-weight: 300;
 		line-height: $lineHeightLauftext;
-		font-size: $baseFontSize*1.5;
+		font-size: $baseFontSize*1.75;
 		margin-bottom: $marginSmall;	
 	}
 }
