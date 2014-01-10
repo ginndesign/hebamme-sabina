@@ -319,7 +319,10 @@ h1 {
 h2 {
   font-family: "CardoItalic";
   font-size: 30px;
-  color: #a8998b; }
+  color: #a8998b;
+  margin-top: 7px; }
+  h2:first-child {
+    margin-top: 0; }
 
 h3 {
   font-family: "CardoItalic";
@@ -506,7 +509,16 @@ a[href="tel:0442002020"]:hover:before {
   header {
     padding: 14px 0; }
     header .logo {
-      margin-bottom: 14px; } }
+      margin-bottom: 14px; }
+
+  .contentWrapper .gridContentTop .grid {
+    padding: 0; }
+  .contentWrapper .gridContentTop .col-1-4, .contentWrapper .gridContentTop .col-1-1 {
+    background: none;
+    padding: 14px 14px 7px;
+    margin: 0;
+    border-left: none;
+    border-bottom: 1px solid #f6ede5; } }
 @media iphone, only screen and (max-width: 320px) {
   header {
     padding: 5px 0 20px; } }
