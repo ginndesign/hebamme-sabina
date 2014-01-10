@@ -132,6 +132,10 @@ h3{
 	font-family:"CardoItalic";
 	font-size: $baseFontSize*2.333;
 	margin-bottom: $marginSmall;
+	span{
+		font-size: $baseFontSize*1.333;
+		color: $corporateColorLauftext;
+	}
 }
 h4{
 	font-family:"NovecentoBook";
@@ -167,6 +171,16 @@ ul{
 	letter-spacing: 0;
 	li{
 		color: $corporateColorLauftext;
+		.gridContentTop &{
+			list-style: none;
+			margin-bottom: $marginSmall;
+			text-indent: -$marginSmall;
+			padding-left: $marginSmall;
+			&:before{
+				content:"•";
+				padding-right: $marginSmall/2;
+			}
+		}
 	}
 	footer &{
 		li{

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,700);
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
@@ -321,6 +322,9 @@ h3 {
   font-family: "CardoItalic";
   font-size: 27.996px;
   margin-bottom: 14px; }
+  h3 span {
+    font-size: 15.996px;
+    color: #a8998b; }
 
 h4 {
   font-family: "NovecentoBook";
@@ -353,6 +357,14 @@ ul {
   letter-spacing: 0; }
   ul li {
     color: #a8998b; }
+    .gridContentTop ul li {
+      list-style: none;
+      margin-bottom: 14px;
+      text-indent: -14px;
+      padding-left: 14px; }
+      .gridContentTop ul li:before {
+        content: "•";
+        padding-right: 7px; }
   footer ul li {
     display: inline; }
   footer ul li:before, footer ul li a:before {
