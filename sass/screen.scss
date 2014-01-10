@@ -42,7 +42,7 @@ header {
 	margin-right: -20px;
 }
 .contentWrapper{
-	.gridContent, .gridContentTop{
+	.gridContent, .gridContentTop, .gridContentNone{
 		background: white;
 		padding: $marginMedium;
 		margin-top: $marginMedium;
@@ -50,7 +50,7 @@ header {
 			margin-top: 0;
 		}
 	}
-	.gridContentTop{
+	.gridContentTop, .gridContentNone{
 		padding: $marginMedium 0 0;
 		.grid{
 			display: block;
@@ -58,20 +58,32 @@ header {
 			border-top: $lightGreyBorder;
 			overflow: hidden;
 		}
-		.col-1-4, .col-1-1{
-			padding: $marginSmall;
+		.col-1-4, .col-1-1, .col-1-2{
+			padding: $marginSmall $marginSmall 2000px+$marginSmall;
 			margin-bottom: -2000px;
-			padding-bottom: 2000px + $marginSmall;
+			// padding-bottom: 2000px + $marginSmall;
 			border-left: $lightGreyBorder;			
 			&:first-child{
 				border-left: none;
 			}
+			&.center {
+				padding: $marginBig $marginBig 2000px+$marginBig;
+			}
+		}
+	}
+	.gridContentNone{
+		padding: 0;
+		.grid{
+			margin: 0;
 		}
 	}
 }
 footer {
 	text-align: center;
 	margin: $marginMedium 0;
+}
+.center{
+	text-align: center;
 }
 // Navigation
 nav {
@@ -126,7 +138,19 @@ h1{
 		border-bottom: $whiteBorder;
 	}
 }
-h2{
+h2 {
+	.col-1-2 &{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	line-height: $lineHeightLauftext;
+	font-size: $baseFontSize*1.5;
+	margin-top: $marginMedium;
+	&:first-child{
+		margin-top: 0;
+	}
+	}
+}
+h2, h6{
 	font-family:"CardoItalic";
 	font-size: $baseFontSize*2.5;
 	color: $corporateColorLauftext;
@@ -146,6 +170,9 @@ h3{
 		font-size: $baseFontSize*1.333;
 		color: $corporateColorLauftext;
 	}
+	.center &{
+		font-size: $baseFontSize*3;
+	}
 }
 h4{
 	font-family:"NovecentoBook";
@@ -161,6 +188,10 @@ h5{
 	color: $corporateColorLauftext;
 	text-align: center;	
 }
+h6{
+	font-size: $baseFontSize*2;
+	margin-top: $marginBig;
+}
 p{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
@@ -171,6 +202,9 @@ p{
 	&:first-child{
 		margin-top: 0;
 	}
+	.center &{
+		font-size: $baseFontSize*1.75;
+	}
 }
 
 // Listen
@@ -179,11 +213,12 @@ ul{
 	font-weight: 300;
 	font-size: $baseFontSize*1.5;
 	letter-spacing: 0;
+	margin-top: $marginSmall;
 	li{
 		color: $corporateColorLauftext;
-		.gridContentTop &{
+		.gridContentTop &, .gridContentNone &{
 			list-style: none;
-			margin-bottom: $marginSmall;
+			margin-bottom: $marginSmall/2;
 			text-indent: -$marginSmall;
 			padding-left: $marginSmall;
 			&:before{
@@ -273,7 +308,7 @@ a{
 	@include transition(all 0.3s ease);
 	color: $corporateLinkColor;
 	text-decoration: none;
-	.contentWrapper p &{
+	.contentWrapper p &, .contentWrapper h6 &{
 		display: inline-block;
 		margin-top: $marginSmall/2;
 		padding: $marginMedium/10 $marginMedium/4;
@@ -293,6 +328,16 @@ a{
 	&:hover{
 		color: $corporateColorViolet;
 	}
+	.headerLinks &{
+		margin: 0 $marginMedium;
+	}
+	.contentWrapper h6 &{
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		line-height: $lineHeightLauftext;
+		font-size: $baseFontSize*1.5;
+		margin-bottom: $marginSmall;	
+	}
 }
 a[href="tel:0442002020"]:hover:before{
 	content: "044 200 20 20";
@@ -302,7 +347,7 @@ a[href="tel:0442002020"]:hover:before{
 	display: block;
 	background: $white;
 	color: $corporateLinkColor;
-	font-family: 'NovecentoBook';
+	font-family: "NovecentoBook";
 	font-size: $baseFontSize*1.333;
 	line-height: 1em;
 	padding: $marginMedium/2;
@@ -323,20 +368,20 @@ img{
 // Parallax
 
 #container {
-    position: fixed;
-    img {
+	position: fixed;
+	img {
 		display: block;
-    }
+	}
 }
 .scene {
-  max-width: 100%;
-  min-width: 980px;
+	max-width: 100%;
+	min-width: 980px;
 }
 .layer:nth-child(1) {
-  opacity: 1;
+	opacity: 1;
 }
 .layer:nth-child(2) {
-  opacity: 1;
+	opacity: 1;
 }
 
 // Media Queries
@@ -384,17 +429,24 @@ img{
 		}
 	}
 	.contentWrapper{
-		.gridContentTop{
+		.gridContentTop, .gridContentNone{
 			.grid{
 				padding: 0;
 			}
-			.col-1-4, .col-1-1 {
-				background: none;
+			.col-1-4, .col-1-1, .col-1-2, .center{
 				padding: $marginSmall $marginSmall $marginSmall/2;
 				margin: 0;
 				border-left: none;
 				border-bottom: $lightGreyBorder;
+				&.center{
+					padding: $marginBig;
+				}
 			}
+		}
+	}
+	a {
+		.headerLinks &{
+			margin: 0 $marginSmall/2;
 		}
 	}
 }

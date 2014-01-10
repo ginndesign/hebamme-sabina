@@ -247,30 +247,38 @@ header {
 .headerWrapper, .contentWrapper {
   margin-right: -20px; }
 
-.contentWrapper .gridContent, .contentWrapper .gridContentTop {
+.contentWrapper .gridContent, .contentWrapper .gridContentTop, .contentWrapper .gridContentNone {
   background: white;
   padding: 20px;
   margin-top: 20px; }
-  .contentWrapper .gridContent:first-child, .contentWrapper .gridContentTop:first-child {
+  .contentWrapper .gridContent:first-child, .contentWrapper .gridContentTop:first-child, .contentWrapper .gridContentNone:first-child {
     margin-top: 0; }
-.contentWrapper .gridContentTop {
+.contentWrapper .gridContentTop, .contentWrapper .gridContentNone {
   padding: 20px 0 0; }
-  .contentWrapper .gridContentTop .grid {
+  .contentWrapper .gridContentTop .grid, .contentWrapper .gridContentNone .grid {
     display: block;
     margin-top: 14px;
     border-top: 1px solid #f6ede5;
     overflow: hidden; }
-  .contentWrapper .gridContentTop .col-1-4, .contentWrapper .gridContentTop .col-1-1 {
-    padding: 14px;
+  .contentWrapper .gridContentTop .col-1-4, .contentWrapper .gridContentTop .col-1-1, .contentWrapper .gridContentTop .col-1-2, .contentWrapper .gridContentNone .col-1-4, .contentWrapper .gridContentNone .col-1-1, .contentWrapper .gridContentNone .col-1-2 {
+    padding: 14px 14px 2014px;
     margin-bottom: -2000px;
-    padding-bottom: 2014px;
     border-left: 1px solid #f6ede5; }
-    .contentWrapper .gridContentTop .col-1-4:first-child, .contentWrapper .gridContentTop .col-1-1:first-child {
+    .contentWrapper .gridContentTop .col-1-4:first-child, .contentWrapper .gridContentTop .col-1-1:first-child, .contentWrapper .gridContentTop .col-1-2:first-child, .contentWrapper .gridContentNone .col-1-4:first-child, .contentWrapper .gridContentNone .col-1-1:first-child, .contentWrapper .gridContentNone .col-1-2:first-child {
       border-left: none; }
+    .contentWrapper .gridContentTop .col-1-4.center, .contentWrapper .gridContentTop .col-1-1.center, .contentWrapper .gridContentTop .col-1-2.center, .contentWrapper .gridContentNone .col-1-4.center, .contentWrapper .gridContentNone .col-1-1.center, .contentWrapper .gridContentNone .col-1-2.center {
+      padding: 35px 35px 2035px; }
+.contentWrapper .gridContentNone {
+  padding: 0; }
+  .contentWrapper .gridContentNone .grid {
+    margin: 0; }
 
 footer {
   text-align: center;
   margin: 20px 0; }
+
+.center {
+  text-align: center; }
 
 footer nav {
   border-top: 1px solid white;
@@ -316,12 +324,21 @@ h1 {
     padding-bottom: 20px;
     border-bottom: 1px solid white; }
 
-h2 {
+.col-1-2 h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  line-height: 1.5em;
+  font-size: 18px;
+  margin-top: 20px; }
+  .col-1-2 h2:first-child {
+    margin-top: 0; }
+
+h2, h6 {
   font-family: "CardoItalic";
   font-size: 30px;
-  color: #a8998b;
+  color: #947e6b;
   margin-top: 7px; }
-  h2:first-child {
+  h2:first-child, h6:first-child {
     margin-top: 0; }
 
 h3 {
@@ -332,7 +349,9 @@ h3 {
     margin-top: 0; }
   h3 span {
     font-size: 15.996px;
-    color: #a8998b; }
+    color: #947e6b; }
+  .center h3 {
+    font-size: 36px; }
 
 h4 {
   font-family: "NovecentoBook";
@@ -345,32 +364,39 @@ h5 {
   font-size: 24px;
   letter-spacing: 0.05rem;
   margin-bottom: 7px;
-  color: #a8998b;
+  color: #947e6b;
   text-align: center; }
+
+h6 {
+  font-size: 24px;
+  margin-top: 35px; }
 
 p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   line-height: 1.5em;
   font-size: 18px;
-  color: #a8998b;
+  color: #947e6b;
   margin-top: 7px; }
   p:first-child {
     margin-top: 0; }
+  .center p {
+    font-size: 21px; }
 
 ul {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 18px;
-  letter-spacing: 0; }
+  letter-spacing: 0;
+  margin-top: 14px; }
   ul li {
-    color: #a8998b; }
-    .gridContentTop ul li {
+    color: #947e6b; }
+    .gridContentTop ul li, .gridContentNone ul li {
       list-style: none;
-      margin-bottom: 14px;
+      margin-bottom: 7px;
       text-indent: -14px;
       padding-left: 14px; }
-      .gridContentTop ul li:before {
+      .gridContentTop ul li:before, .gridContentNone ul li:before {
         content: "•";
         padding-right: 7px; }
   footer ul li {
@@ -428,21 +454,29 @@ a {
   transition: all 0.3s ease;
   color: #2acd7e;
   text-decoration: none; }
-  .contentWrapper p a {
+  .contentWrapper p a, .contentWrapper h6 a {
     display: inline-block;
     margin-top: 7px;
     padding: 2px 5px;
     border: 1px solid #2acd7e; }
-    .contentWrapper p a:hover, .contentWrapper p a:focus {
+    .contentWrapper p a:hover, .contentWrapper p a:focus, .contentWrapper h6 a:hover, .contentWrapper h6 a:focus {
       color: white;
       background: #2acd7e; }
-    .contentWrapper p a:focus {
+    .contentWrapper p a:focus, .contentWrapper h6 a:focus {
       display: block; }
-    .contentWrapper p a:active {
+    .contentWrapper p a:active, .contentWrapper h6 a:active {
       background: #622181;
       border: 1px solid #622181; }
   a:hover {
     color: #622181; }
+  .headerLinks a {
+    margin: 0 20px; }
+  .contentWrapper h6 a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.5em;
+    font-size: 18px;
+    margin-bottom: 14px; }
 
 a[href="tel:0442002020"]:hover:before {
   content: "044 200 20 20";
@@ -452,7 +486,7 @@ a[href="tel:0442002020"]:hover:before {
   display: block;
   background: white;
   color: #2acd7e;
-  font-family: 'NovecentoBook';
+  font-family: "NovecentoBook";
   font-size: 15.996px;
   line-height: 1em;
   padding: 10px; }
@@ -511,14 +545,18 @@ a[href="tel:0442002020"]:hover:before {
     header .logo {
       margin-bottom: 14px; }
 
-  .contentWrapper .gridContentTop .grid {
+  .contentWrapper .gridContentTop .grid, .contentWrapper .gridContentNone .grid {
     padding: 0; }
-  .contentWrapper .gridContentTop .col-1-4, .contentWrapper .gridContentTop .col-1-1 {
-    background: none;
+  .contentWrapper .gridContentTop .col-1-4, .contentWrapper .gridContentTop .col-1-1, .contentWrapper .gridContentTop .col-1-2, .contentWrapper .gridContentTop .center, .contentWrapper .gridContentNone .col-1-4, .contentWrapper .gridContentNone .col-1-1, .contentWrapper .gridContentNone .col-1-2, .contentWrapper .gridContentNone .center {
     padding: 14px 14px 7px;
     margin: 0;
     border-left: none;
-    border-bottom: 1px solid #f6ede5; } }
+    border-bottom: 1px solid #f6ede5; }
+    .contentWrapper .gridContentTop .col-1-4.center, .contentWrapper .gridContentTop .col-1-1.center, .contentWrapper .gridContentTop .col-1-2.center, .contentWrapper .gridContentTop .center.center, .contentWrapper .gridContentNone .col-1-4.center, .contentWrapper .gridContentNone .col-1-1.center, .contentWrapper .gridContentNone .col-1-2.center, .contentWrapper .gridContentNone .center.center {
+      padding: 35px; }
+
+  .headerLinks a {
+    margin: 0 7px; } }
 @media iphone, only screen and (max-width: 320px) {
   header {
     padding: 5px 0 20px; } }
