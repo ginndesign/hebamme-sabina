@@ -140,14 +140,14 @@ h1{
 }
 h2 {
 	.col-1-2 &{
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 700;
-	line-height: $lineHeightLauftext;
-	font-size: $baseFontSize*1.5;
-	margin-top: $marginMedium;
-	&:first-child{
-		margin-top: 0;
-	}
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 700;
+		line-height: $lineHeightLauftext;
+		font-size: $baseFontSize*1.5;
+		margin-top: $marginMedium;
+		&:first-child{
+			margin-top: 0;
+		}
 	}
 }
 h2, h6{
@@ -191,6 +191,9 @@ h5{
 h6{
 	font-size: $baseFontSize*2;
 	margin-top: $marginBig;
+}
+.gridContentTop > h6{
+	margin-top: 0;
 }
 p{
 	font-family: 'Open Sans', sans-serif;
