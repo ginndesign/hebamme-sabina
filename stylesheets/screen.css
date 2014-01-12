@@ -306,7 +306,8 @@ nav#menu {
   width: 54px;
   height: 51px;
   display: block;
-  background-image: url(../images/icon-menu.png); }
+  background-image: url(../images/icon-menu.png);
+  z-index: 100; }
 
 h1, h2, h3, h4, h5, h6, p, li {
   line-height: 1.3em;
