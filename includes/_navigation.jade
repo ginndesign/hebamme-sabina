@@ -4,6 +4,6 @@ nav#menu.panel(role='navigation')
     include _sitemap
   ul
     li
-      a(href='') &#9993;
+      script(type='text/javascript') document.write("<a href=\"mail" + "to:" + new Array("info","oertli.ch").join("@") + "?subject=Kontakt von Webseite" + "\">" + "&#9993;" + "</" + "a>");
     li
       a(href='tel:0442002020') &#128222;
