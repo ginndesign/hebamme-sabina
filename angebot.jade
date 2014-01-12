@@ -14,18 +14,19 @@ html(lang='de')
                 img.editable(src='images/Hebamme-Zuerich-Angebot.png', alt='Sabina Oertli – Hebamme in Zürich')
             h1.editable Mein Angebot
             h2.editable.headerLinks
-              a(href="#") Schwangerschaft
+              a(href="#Schwangerschaft" class='scroll' data-speed="500" data-easing="easeInOutCubic" data-url="false") Schwangerschaft
               | ∙
-              a(href="#") Geburtsvorbereitung
+              a(href="#Geburtsvorbereitung" class='scroll' data-speed="500" data-easing="easeInOutCubic" data-url="false") Geburtsvorbereitung
               | ∙
-              a(href="#") Wochenbett
+              a(href="#Wochenbett" class='scroll' data-speed="500" data-easing="easeInOutCubic" data-url="false") Wochenbett
               | ∙
-              a(href="#") Rückbildung
+              a(href="#Rueckbildung" class='scroll' data-speed="500" data-easing="easeInOutCubic" data-url="false") Rückbildung
       .contentWrapper.push
         .col-1-1
-          .gridContentNone.editable
+          #Schwangerschaft.gridContentNone.editable
             .grid
               .col-1-2.center
+                a(name='Schwangerschaft')
                 img(src='images/icon-schwangerschaft.png', alt='Schwangerschaft')
                 h3 Schwangerschaft
                 p Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte.
@@ -36,7 +37,7 @@ html(lang='de')
                   li Unorthographisches Leben
                   li Kleine Zeile Blindtext
                   li Duden fließt durch
-          .gridContentNone.editable
+          #Geburtsvorbereitung.gridContentNone.editable
             .grid
               .col-1-2.center
                 img(src='images/icon-geburtsvorbereitung.png', alt='Geburtsvorbereitung')
@@ -64,7 +65,7 @@ html(lang='de')
                   li Unorthographisches Leben
                   li Kleine Zeile Blindtext
                   li Duden fließt durch
-          .gridContentNone.editable
+          #Wochenbett.gridContentNone.editable
             .grid
               .col-1-2.center
                 img(src='images/icon-wochenbett.png', alt='Wochenbett')
@@ -78,7 +79,7 @@ html(lang='de')
                   li Unorthographisches Leben
                   li Kleine Zeile Blindtext
                   li Duden fließt durch
-          .gridContentNone.editable
+          #Rueckbildung.gridContentNone.editable
             .grid
               .col-1-2.center
                 img(src='images/icon-rueckbildung.png', alt='Rückbildung')
