@@ -49,6 +49,9 @@ header {
 		&:first-child{
 			margin-top: 0;
 		}
+		.col-1-1{
+			padding: 0;
+		}
 	}
 	.gridContentTop, .gridContentNone{
 		padding: $marginMedium 0 0;
@@ -61,7 +64,6 @@ header {
 		.col-1-4, .col-1-1, .col-1-2{
 			padding: $marginSmall $marginSmall 2000px+$marginSmall;
 			margin-bottom: -2000px;
-			// padding-bottom: 2000px + $marginSmall;
 			border-left: $lightGreyBorder;			
 			&:first-child{
 				border-left: none;
@@ -199,9 +201,6 @@ h5{
 }
 h6{
 	font-size: $baseFontSize*2;
-}
-.gridContentTop > h6{
-	margin-top: 0;
 }
 p{
 	font-family: 'Open Sans', sans-serif;
@@ -434,9 +433,28 @@ img{
 	}
 	h3{
 		margin-bottom: $marginSmall/2;
+		.teaser &{
+			margin-top: 0;
+		}
+	}
+	h6{
+		.center &{
+			margin-top: $marginMedium;
+		}
+		.name &{
+			margin-top: 0;
+		}
 	}
 	p, h4, ul{
 		font-size: $baseFontSize*1.333;
+		.center &, .centerKontakt &{
+			margin-bottom: 0;
+		}
+	}
+	p{
+		.center &, .centerKontakt &{
+		font-size: $baseFontSize*1.5;
+		}
 	}
 	img{
 		.teaser &{
@@ -453,7 +471,7 @@ img{
 		}
 	}
 	.contentWrapper{
-		.gridContentTop, .gridContentNone{
+		.gridContent, .gridContentTop, .gridContentNone{
 			.grid{
 				padding: 0;
 			}
@@ -465,6 +483,13 @@ img{
 				&.center{
 					padding: $marginBig;
 				}
+			}
+		}
+		.gridContent {
+			.col-1-1{
+				margin-top: 0;
+				padding: 0;
+				border-bottom: 0;
 			}
 		}
 	}

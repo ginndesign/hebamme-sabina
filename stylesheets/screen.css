@@ -253,6 +253,8 @@ header {
   margin-top: 20px; }
   .contentWrapper .gridContent:first-child, .contentWrapper .gridContentTop:first-child, .contentWrapper .gridContentNone:first-child {
     margin-top: 0; }
+  .contentWrapper .gridContent .col-1-1, .contentWrapper .gridContentTop .col-1-1, .contentWrapper .gridContentNone .col-1-1 {
+    padding: 0; }
 .contentWrapper .gridContentTop, .contentWrapper .gridContentNone {
   padding: 20px 0 0; }
   .contentWrapper .gridContentTop .grid, .contentWrapper .gridContentNone .grid {
@@ -376,9 +378,6 @@ h5 {
 
 h6 {
   font-size: 24px; }
-
-.gridContentTop > h6 {
-  margin-top: 0; }
 
 p {
   font-family: 'Open Sans', sans-serif;
@@ -543,9 +542,21 @@ a[href="tel:0442002020"]:hover:before {
 
   h3 {
     margin-bottom: 7px; }
+    .teaser h3 {
+      margin-top: 0; }
+
+  .center h6 {
+    margin-top: 20px; }
+  .name h6 {
+    margin-top: 0; }
 
   p, h4, ul {
     font-size: 15.996px; }
+    .center p, .centerKontakt p, .center h4, .centerKontakt h4, .center ul, .centerKontakt ul {
+      margin-bottom: 0; }
+
+  .center p, .centerKontakt p {
+    font-size: 18px; }
 
   .teaser img {
     display: none; }
@@ -558,15 +569,19 @@ a[href="tel:0442002020"]:hover:before {
     header .logo {
       margin-bottom: 14px; }
 
-  .contentWrapper .gridContentTop .grid, .contentWrapper .gridContentNone .grid {
+  .contentWrapper .gridContent .grid, .contentWrapper .gridContentTop .grid, .contentWrapper .gridContentNone .grid {
     padding: 0; }
-  .contentWrapper .gridContentTop .col-1-4, .contentWrapper .gridContentTop .col-1-1, .contentWrapper .gridContentTop .col-1-2, .contentWrapper .gridContentTop .center, .contentWrapper .gridContentNone .col-1-4, .contentWrapper .gridContentNone .col-1-1, .contentWrapper .gridContentNone .col-1-2, .contentWrapper .gridContentNone .center {
+  .contentWrapper .gridContent .col-1-4, .contentWrapper .gridContent .col-1-1, .contentWrapper .gridContent .col-1-2, .contentWrapper .gridContent .center, .contentWrapper .gridContentTop .col-1-4, .contentWrapper .gridContentTop .col-1-1, .contentWrapper .gridContentTop .col-1-2, .contentWrapper .gridContentTop .center, .contentWrapper .gridContentNone .col-1-4, .contentWrapper .gridContentNone .col-1-1, .contentWrapper .gridContentNone .col-1-2, .contentWrapper .gridContentNone .center {
     padding: 14px 14px 7px;
     margin: 0;
     border-left: none;
     border-bottom: 1px solid #f6ede5; }
-    .contentWrapper .gridContentTop .col-1-4.center, .contentWrapper .gridContentTop .col-1-1.center, .contentWrapper .gridContentTop .col-1-2.center, .contentWrapper .gridContentTop .center.center, .contentWrapper .gridContentNone .col-1-4.center, .contentWrapper .gridContentNone .col-1-1.center, .contentWrapper .gridContentNone .col-1-2.center, .contentWrapper .gridContentNone .center.center {
+    .contentWrapper .gridContent .col-1-4.center, .contentWrapper .gridContent .col-1-1.center, .contentWrapper .gridContent .col-1-2.center, .contentWrapper .gridContent .center.center, .contentWrapper .gridContentTop .col-1-4.center, .contentWrapper .gridContentTop .col-1-1.center, .contentWrapper .gridContentTop .col-1-2.center, .contentWrapper .gridContentTop .center.center, .contentWrapper .gridContentNone .col-1-4.center, .contentWrapper .gridContentNone .col-1-1.center, .contentWrapper .gridContentNone .col-1-2.center, .contentWrapper .gridContentNone .center.center {
       padding: 35px; }
+  .contentWrapper .gridContent .col-1-1 {
+    margin-top: 0;
+    padding: 0;
+    border-bottom: 0; }
 
   .headerLinks a {
     margin: 0 7px; } }
