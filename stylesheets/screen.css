@@ -299,6 +299,8 @@ nav#menu {
     color: white; }
     nav#menu a:hover {
       color: #622181; }
+nav a.cc-active {
+  color: #622181; }
 
 .panel {
   position: fixed;
