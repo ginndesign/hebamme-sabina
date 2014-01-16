@@ -66,7 +66,7 @@ header {
 			&:first-child{
 				border-left: none;
 			}
-			&.center {
+			&.center{
 				padding: $marginBig $marginBig 2000px+$marginBig;
 			}
 		}
@@ -82,7 +82,7 @@ footer {
 	text-align: center;
 	margin: $marginMedium 0;
 }
-.center{
+.center, .centerKontakt{
 	text-align: center;
 }
 // Navigation
@@ -163,7 +163,7 @@ h2, h6{
 h3{
 	font-family:"CardoItalic";
 	font-size: $baseFontSize*2.333;
-	margin-top: $marginSmall/2;
+	margin-top: $marginSmall;
 	&:first-child{
 		margin-top: 0;
 	}
@@ -171,8 +171,11 @@ h3{
 		font-size: $baseFontSize*1.333;
 		color: $corporateColorLauftext;
 	}
-	.center &{
+	.center &, .centerKontakt &{
 		font-size: $baseFontSize*3;
+	}
+	.centerKontakt &{
+		margin-top: 0;
 	}
 	.adresse &{
 		margin-top: $marginSmall;
@@ -196,7 +199,6 @@ h5{
 }
 h6{
 	font-size: $baseFontSize*2;
-	margin-top: $marginBig;
 }
 .gridContentTop > h6{
 	margin-top: 0;
@@ -211,8 +213,12 @@ p{
 	&:first-child{
 		margin-top: 0;
 	}
-	.center &{
+	.center &, .centerKontakt &{
 		font-size: $baseFontSize*1.75;
+		margin-bottom: $marginBig;
+	}
+	.centerKontakt &{
+		margin-bottom: 0;
 	}
 }
 
@@ -351,8 +357,11 @@ a{
 		font-weight: 300;
 		line-height: $lineHeightLauftext;
 		font-size: $baseFontSize*1.75;
-		margin-bottom: $marginSmall;	
+		margin-bottom: $marginSmall;
 	}
+	.teaser h6 &{
+		margin-bottom: 0;
+	}	
 }
 a[href="tel:0442002020"]:hover:before{
 	content: "044 200 20 20";
