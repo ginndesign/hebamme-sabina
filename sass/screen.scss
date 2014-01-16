@@ -3,4 +3,511 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "compass/reset";
+ @import "compass/reset";
+ @import "compass/css3";
+ @import "mixin";
+ @import "variables";
+ @import "grid";
+ @import "parallax-header";
+
+ @include font-face("Novecento", font-files("novecentowide-light-webfont.ttf", "novecentowide-light-webfont.otf", "novecentowide-light-webfont.woff", "novecentowide-light-webfont.eot", "novecentowide-light-webfont.svg"));
+ @include font-face("NovecentoBook", font-files("novecentowide-book-webfont.ttf", "novecentowide-book-webfont.otf", "novecentowide-book-webfont.woff", "novecentowide-book-webfont.eot", "novecentowide-book-webfont.svg"));
+ @include font-face("NovecentoBold", font-files("novecentowide-bold-webfont.ttf", "novecentowide-bold-webfont.otf", "novecentowide-bold-webfont.woff", "novecentowide-bold-webfont.eot", "novecentowide-bold-webfont.svg"));
+ @include font-face("CardoItalic", font-files("cardo-italic-webfont.ttf", "cardo-italic-webfont.otf", "cardo-italic-webfont.woff", "cardo-italic-webfont.eot", "cardo-italic-webfont.svg"));
+ @include font-face("Entypo", font-files("entypo.ttf", "entypo.otf", "entypo.woff", "entypo.eot", "entypo.svg"));
+ @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,700);
+
+ * {
+ 	@include box-sizing(border-box);
+ 	text-shadow: $smoothTextShadow;
+ 	-webkit-font-smoothing: antialiased;
+ 	font-size: $baseFontSize;
+ }
+ body {
+ 	background: url(../images/background-body.jpg) no-repeat center center fixed;
+ 	@include cover(cover);
+ 	@include hyphens(auto);
+ }
+
+// Struktur
+header {
+	padding: $marginBig 0;
+	text-align: center;
+	border-bottom: $whiteBorder;
+	margin-bottom: $marginMedium;
+	.logo{
+		margin-bottom: $marginBig;
+	}
+}
+.headerWrapper, .contentWrapper{
+	margin-right: -20px;
+}
+.contentWrapper{
+	.gridContent, .gridContentTop, .gridContentNone{
+		background: white;
+		padding: $marginMedium;
+		margin-top: $marginMedium;
+		&:first-child{
+			margin-top: 0;
+		}
+		.col-1-1{
+			padding: 0;
+		}
+	}
+	.gridContentTop, .gridContentNone{
+		padding: $marginMedium 0 0;
+		.grid{
+			display: block;
+			margin-top: $marginSmall;
+			border-top: $lightGreyBorder;
+			overflow: hidden;
+		}
+		.col-1-4, .col-1-1, .col-1-2{
+			padding: $marginSmall $marginSmall 2000px+$marginSmall;
+			margin-bottom: -2000px;
+			border-left: $lightGreyBorder;			
+			&:first-child{
+				border-left: none;
+			}
+			&.center{
+				padding: $marginBig $marginBig 2000px+$marginBig;
+			}
+		}
+	}
+	.gridContentNone{
+		padding: 0;
+		.grid{
+			margin: 0;
+		}
+	}
+}
+footer {
+	text-align: center;
+	margin: $marginMedium 0;
+}
+.center, .centerKontakt{
+	text-align: center;
+}
+// Navigation
+nav {
+	footer & {
+		border-top: $whiteBorder;
+		border-bottom: $whiteBorder;
+		padding: $marginMedium/4 0;
+		margin: 0 0 $marginMedium;
+	}
+	&#menu{
+		padding: $marginMedium $marginBig;
+		background: $corporateLinkColor;
+		text-align: center;
+		a{
+			color: $white;
+			&:hover {
+				color: $corporateColorViolet;
+			}
+		}
+	}
+}
+.panel {
+	position: fixed;
+	left: -15.625em;
+	width: 15.625em;
+}
+.menu-link {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 54px;
+	height: 51px;
+	display: block;
+	background-image: url(../images/icon-menu.png);
+	z-index:100;
+}
+// Typografie
+h1, h2, h3, h4, h5, h6, p, li{
+	line-height:$lineHeight;
+	color: $corporateColorViolet;		
+}
+
+h1{
+	font-family:"Novecento";
+	font-size: $baseFontSize*5;
+	letter-spacing: $letterSpacingHeadline;
+	margin-bottom: $marginMedium;
+	#menu &{
+		font-family: "NovecentoBook";
+		font-size: $baseFontSize*2.333;
+		color: $white;
+		padding-bottom: $marginMedium;
+		border-bottom: $whiteBorder;
+	}
+}
+h2 {
+	.col-1-2 &{
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 700;
+		line-height: $lineHeightLauftext;
+		font-size: $baseFontSize*1.5;
+		margin-top: $marginMedium;
+		&:first-child{
+			margin-top: 0;
+		}
+	}
+}
+h2, h6{
+	font-family:"CardoItalic";
+	font-size: $baseFontSize*2.5;
+	color: $corporateColorLauftext;
+	margin-top: $marginSmall/2;
+	&:first-child{
+		margin-top: 0;
+	}
+}
+h3{
+	font-family:"CardoItalic";
+	font-size: $baseFontSize*2.333;
+	margin-top: $marginSmall;
+	&:first-child{
+		margin-top: 0;
+	}
+	span{
+		font-size: $baseFontSize*1.333;
+		color: $corporateColorLauftext;
+	}
+	.center &, .centerKontakt &{
+		font-size: $baseFontSize*3;
+	}
+	.centerKontakt &{
+		margin-top: 0;
+	}
+	.adresse &{
+		margin-top: $marginSmall;
+		font-size: $baseFontSize*2;
+		color: $corporateColorLauftext;
+	}
+}
+h4{
+	font-family:"NovecentoBook";
+	font-size: $baseFontSize*1.5;
+	letter-spacing: $letterSpacingHeadline/2;
+	margin-bottom: $marginSmall/2;
+}
+h5{
+	font-family:"NovecentoBook";
+	font-size: $baseFontSize*2;
+	letter-spacing: $letterSpacingHeadline/2;
+	margin-bottom: $marginSmall/2;
+	color: $corporateColorLauftext;
+	text-align: center;	
+}
+h6{
+	font-size: $baseFontSize*2;
+}
+p{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	line-height: $lineHeightLauftext;
+	font-size: $baseFontSize*1.5;
+	color: $corporateColorLauftext;
+	margin-top: $marginSmall/2;
+	&:first-child{
+		margin-top: 0;
+	}
+	.center &, .centerKontakt &{
+		font-size: $baseFontSize*1.75;
+		margin-bottom: $marginBig;
+	}
+	.centerKontakt &{
+		margin-bottom: 0;
+	}
+}
+
+// Listen
+ul{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	font-size: $baseFontSize*1.5;
+	letter-spacing: 0;
+	margin-top: $marginSmall;
+	li{
+		color: $corporateColorLauftext;
+		.gridContentTop &, .gridContentNone &{
+			list-style: none;
+			margin-bottom: $marginSmall/2;
+			text-indent: -$marginSmall;
+			padding-left: $marginSmall;
+			&:before{
+				content:"•";
+				padding-right: $marginSmall/2;
+			}
+		}
+	}
+	footer &{
+		li{
+			display: inline;
+		}
+		li:before, li a:before{
+			font:$baseFontSize*2.333 'Entypo';
+			margin: 0 $marginMedium/4 0 $marginMedium/2;
+		}
+	}
+	nav &{
+		font-family: 'NovecentoBook';
+		letter-spacing: $letterSpacingHeadline/2;
+		margin-top: 0;
+		li:before, li a:before{
+			margin: 0 $marginMedium/4 0 $marginMedium*1.5;
+		}
+	}
+	#menu &{
+		border-bottom: $whiteBorder;
+		&:last-of-type {
+			font-family: 'Entypo';
+			font-size: $baseFontSize*4;
+			padding: $marginMedium/2 0;
+			li{
+				display: inline-block;
+				line-height: 0.8em;
+				// background: red;
+				height: 40px;
+				padding: 0 $marginMedium 0 $marginMedium/2;
+				border-right: $whiteBorder;
+				&:last-of-type {
+					border: none;
+				}
+			}
+		}
+	}
+	#menu & li{
+		padding-bottom: $marginMedium;
+	}
+}
+// Icons
+footer {
+	.home {
+		&:before {
+			content:"\2302";
+		}
+	}
+	.ueber {
+		&:before {
+			content:"\1F464";
+		}
+	}
+	.angebot {
+		&:before {
+			content:"\1F4BF";
+		}
+	}
+	.kontakt {
+		&:before {
+			font-size:$baseFontSize*3;
+			content:"\E724";
+			vertical-align: -2px;
+	
+		}
+	}
+	.telefon {
+		&:before {
+			content:"\1F4DE";
+		}
+	}
+	.e-mail {
+		&:before {
+			content:"\2709";
+			vertical-align: -2px;
+		}
+	}
+}
+// Links
+
+a{
+	@include transition(all 0.3s ease);
+	color: $corporateLinkColor;
+	text-decoration: none;
+	border-bottom: $linkBorder;
+	&:hover{
+		color: $corporateColorViolet;
+		border-bottom: $linkBorderHover;
+	}
+	.headerLinks &{
+		margin: 0 $marginMedium;
+	}
+	footer &, header &, nav &, h2 &{
+		border-bottom: none;
+		&:hover {
+			border-bottom: none;
+		}
+	}
+}
+a[href="tel:0442002020"]:hover:before{
+	content: "044 200 20 20";
+	left: 0;
+	margin: 53px 0 0 72px;
+	position: absolute;
+	display: block;
+	background: $white;
+	color: $corporateLinkColor;
+	font-family: "NovecentoBook";
+	font-size: $baseFontSize*1.333;
+	line-height: 1em;
+	padding: $marginMedium/2;
+}
+// Buttons
+a{
+	.contentWrapper h6 &{
+		font-family: "NovecentoBold";
+		color: $white;
+		letter-spacing: $letterSpacingHeadline/2;
+		display: inline-block;
+		margin-top: $marginSmall/2;
+		margin-left: 0;
+		padding: $marginMedium/5 $marginMedium/2 $marginMedium/7;
+		background: $corporateLinkColor;		
+		&:hover, &:focus{
+			color: $white;
+			background: $corporateColorViolet;
+		}
+		&:active{
+			background: $corporateColorViolet;
+			border: $linkBorderHover;
+		}
+	}
+	.contentWrapper h6 &{
+		font-size: $baseFontSize*1.5;
+		margin-bottom: $marginSmall;
+	}
+	.teaser h6 &{
+		margin-bottom: 0;
+	}	
+}
+// Bilder
+
+img{
+	.logo &{
+		width: 241px;
+	}
+	.teaser &{
+		display: block;
+		margin: 0 auto $marginMedium;
+	}
+
+}
+
+// Parallax
+
+#container {
+	position: fixed;
+	img {
+		display: block;
+	}
+}
+.scene {
+	max-width: 100%;
+	min-width: 2000px;
+}
+.layer:nth-child(1) {
+	opacity: 1;
+}
+.layer:nth-child(2) {
+	opacity: 1;
+}
+
+// Media Queries
+
+@media desktop, only screen and (max-width: 1040px) {
+	h1{
+		font-size: $baseFontSize*4;
+	}
+	h2{
+		font-size: $baseFontSize*2;
+	}
+	img{
+		.logo &{
+			width: 200px;
+		}
+	}
+
+}
+
+@media handheld, only screen and (max-width: 768px) {
+	h1{
+		font-size: $baseFontSize*3;
+	}
+	h2{
+		font-size: $baseFontSize*1.75;
+	}
+	h3{
+		margin-bottom: $marginSmall/2;
+		.teaser &{
+			margin-top: 0;
+		}
+	}
+	h6{
+		.center &{
+			margin-top: $marginMedium;
+		}
+		.name &{
+			margin-top: 0;
+		}
+	}
+	p, h4, ul{
+		font-size: $baseFontSize*1.333;
+		.center &, .centerKontakt &{
+			margin-bottom: 0;
+		}
+	}
+	p{
+		.center &, .centerKontakt &{
+		font-size: $baseFontSize*1.5;
+		}
+	}
+	img{
+		.teaser &{
+			display: none;
+		}
+	}
+	.headerWrapper, .contentWrapper{
+		margin-right: 0;
+	}
+	header{
+		padding: $marginSmall 0;
+		.logo {
+			margin-bottom: $marginSmall;
+		}
+	}
+	.contentWrapper{
+		.gridContent, .gridContentTop, .gridContentNone{
+			.grid{
+				padding: 0;
+			}
+			.col-1-4, .col-1-1, .col-1-2, .center{
+				padding: $marginSmall $marginSmall $marginSmall/2;
+				margin: 0;
+				border-left: none;
+				border-bottom: $lightGreyBorder;
+				&.center{
+					padding: $marginBig;
+				}
+			}
+		}
+		.gridContent {
+			.col-1-1{
+				margin-top: 0;
+				padding: 0;
+				border-bottom: 0;
+			}
+		}
+	}
+	a {
+		.headerLinks &{
+			margin: 0 $marginSmall/2;
+		}
+	}
+}
+
+@media iphone, only screen and (max-width: 320px) {
+	header{
+		padding: $marginMedium/4 0 $marginMedium;
+	}
+}

@@ -1,8 +1,9 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,700);
 /* Welcome to Compass.
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,37 +24,574 @@ time, mark, audio, video {
   font-size: 100%;
   vertical-align: baseline; }
 
-/* line 22, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1; }
 
-/* line 24, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none; }
 
-/* line 26, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 28, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle; }
 
-/* line 30, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none; }
-  /* line 103, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
   q:before, q:after, blockquote:before, blockquote:after {
     content: "";
     content: none; }
 
-/* line 32, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none; }
 
-/* line 116, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
+
+/*
+  Simple Grid
+  Learn More - http://dallasbass.com/simple-grid-a-lightweight-responsive-css-grid/
+  Project Page - http://thisisdallas.github.com/Simple-Grid/
+  Author - Dallas Bass
+  Site - dallasbass.com
+*/
+[class*='col-'] {
+  float: left;
+  padding-right: 20px; }
+
+[class*='col-']:last-of-type {
+  padding-right: 20px; }
+
+.grid {
+  position: relative;
+  width: 100%;
+  max-width: 1240px;
+  min-width: 755px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+.grid:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.grid-pad {
+  padding: 0 20px; }
+
+.grid-pad > [class*='col-']:last-of-type {
+  padding-right: 0; }
+
+.push-right {
+  float: right; }
+
+/* Content Columns */
+.col-1-1 {
+  width: 100%; }
+
+.col-2-3, .col-8-12 {
+  width: 66.66%; }
+
+.col-1-2, .col-6-12 {
+  width: 50%; }
+
+.col-1-3, .col-4-12 {
+  width: 33.33%; }
+
+.col-1-4, .col-3-12 {
+  width: 25%; }
+
+.col-1-5 {
+  width: 20%; }
+
+.col-1-6, .col-2-12 {
+  width: 16.667%; }
+
+.col-1-7 {
+  width: 14.28%; }
+
+.col-1-8 {
+  width: 12.5%; }
+
+.col-1-9 {
+  width: 11.1%; }
+
+.col-1-10 {
+  width: 10%; }
+
+.col-1-11 {
+  width: 9.09%; }
+
+.col-1-12 {
+  width: 8.33%; }
+
+/* Layout Columns */
+.col-11-12 {
+  width: 91.66%; }
+
+.col-10-12 {
+  width: 83.333%; }
+
+.col-9-12 {
+  width: 75%; }
+
+.col-5-12 {
+  width: 41.66%; }
+
+.col-7-12 {
+  width: 58.33%; }
+
+@media handheld, only screen and (max-width: 768px) {
+  .grid {
+    width: 100%;
+    min-width: 0;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 20px;
+    padding-right: 20px; }
+
+  [class*='col-'] {
+    width: auto;
+    float: none;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 20px;
+    padding-left: 0;
+    padding-right: 0; }
+
+  [class*='col-']:last-of-type {
+    padding-right: 0; } }
+.layer img {
+  display: block;
+  width: 100%; }
+
+.scene {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0; }
+
+.layer:nth-child(1) {
+  opacity: 0.15; }
+
+.layer:nth-child(2) {
+  opacity: 0.30; }
+
+.layer:nth-child(3) {
+  opacity: 0.45; }
+
+.layer:nth-child(4) {
+  opacity: 0.60; }
+
+.layer:nth-child(5) {
+  opacity: 0.75; }
+
+.layer:nth-child(6) {
+  opacity: 0.90; }
+
+.content {
+  z-index: 100;
+  position: absolute;
+  top: 500px;
+  display: block;
+  height: 300px;
+  width: 100%;
+  background: red; }
+
+@font-face {
+  font-family: "Novecento";
+  src: url('../fonts/novecentowide-light-webfont.ttf') format('truetype'), url('../fonts/novecentowide-light-webfont.otf') format('opentype'), url('../fonts/novecentowide-light-webfont.woff') format('woff'), url('../fonts/novecentowide-light-webfont.eot') format('embedded-opentype'), url('../fonts/novecentowide-light-webfont.svg') format('svg'); }
+
+@font-face {
+  font-family: "NovecentoBook";
+  src: url('../fonts/novecentowide-book-webfont.ttf') format('truetype'), url('../fonts/novecentowide-book-webfont.otf') format('opentype'), url('../fonts/novecentowide-book-webfont.woff') format('woff'), url('../fonts/novecentowide-book-webfont.eot') format('embedded-opentype'), url('../fonts/novecentowide-book-webfont.svg') format('svg'); }
+
+@font-face {
+  font-family: "NovecentoBold";
+  src: url('../fonts/novecentowide-bold-webfont.ttf') format('truetype'), url('../fonts/novecentowide-bold-webfont.otf') format('opentype'), url('../fonts/novecentowide-bold-webfont.woff') format('woff'), url('../fonts/novecentowide-bold-webfont.eot') format('embedded-opentype'), url('../fonts/novecentowide-bold-webfont.svg') format('svg'); }
+
+@font-face {
+  font-family: "CardoItalic";
+  src: url('../fonts/cardo-italic-webfont.ttf') format('truetype'), url('../fonts/cardo-italic-webfont.otf') format('opentype'), url('../fonts/cardo-italic-webfont.woff') format('woff'), url('../fonts/cardo-italic-webfont.eot') format('embedded-opentype'), url('../fonts/cardo-italic-webfont.svg') format('svg'); }
+
+@font-face {
+  font-family: "Entypo";
+  src: url('../fonts/entypo.ttf') format('truetype'), url('../fonts/entypo.otf') format('opentype'), url('../fonts/entypo.woff') format('woff'), url('../fonts/entypo.eot') format('embedded-opentype'), url('../fonts/entypo.svg') format('svg'); }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.005);
+  -webkit-font-smoothing: antialiased;
+  font-size: 12px; }
+
+body {
+  background: url(../images/background-body.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto; }
+
+header {
+  padding: 35px 0;
+  text-align: center;
+  border-bottom: 1px solid white;
+  margin-bottom: 20px; }
+  header .logo {
+    margin-bottom: 35px; }
+
+.headerWrapper, .contentWrapper {
+  margin-right: -20px; }
+
+.contentWrapper .gridContent, .contentWrapper .gridContentTop, .contentWrapper .gridContentNone {
+  background: white;
+  padding: 20px;
+  margin-top: 20px; }
+  .contentWrapper .gridContent:first-child, .contentWrapper .gridContentTop:first-child, .contentWrapper .gridContentNone:first-child {
+    margin-top: 0; }
+  .contentWrapper .gridContent .col-1-1, .contentWrapper .gridContentTop .col-1-1, .contentWrapper .gridContentNone .col-1-1 {
+    padding: 0; }
+.contentWrapper .gridContentTop, .contentWrapper .gridContentNone {
+  padding: 20px 0 0; }
+  .contentWrapper .gridContentTop .grid, .contentWrapper .gridContentNone .grid {
+    display: block;
+    margin-top: 14px;
+    border-top: 1px solid #f6ede5;
+    overflow: hidden; }
+  .contentWrapper .gridContentTop .col-1-4, .contentWrapper .gridContentTop .col-1-1, .contentWrapper .gridContentTop .col-1-2, .contentWrapper .gridContentNone .col-1-4, .contentWrapper .gridContentNone .col-1-1, .contentWrapper .gridContentNone .col-1-2 {
+    padding: 14px 14px 2014px;
+    margin-bottom: -2000px;
+    border-left: 1px solid #f6ede5; }
+    .contentWrapper .gridContentTop .col-1-4:first-child, .contentWrapper .gridContentTop .col-1-1:first-child, .contentWrapper .gridContentTop .col-1-2:first-child, .contentWrapper .gridContentNone .col-1-4:first-child, .contentWrapper .gridContentNone .col-1-1:first-child, .contentWrapper .gridContentNone .col-1-2:first-child {
+      border-left: none; }
+    .contentWrapper .gridContentTop .col-1-4.center, .contentWrapper .gridContentTop .col-1-1.center, .contentWrapper .gridContentTop .col-1-2.center, .contentWrapper .gridContentNone .col-1-4.center, .contentWrapper .gridContentNone .col-1-1.center, .contentWrapper .gridContentNone .col-1-2.center {
+      padding: 35px 35px 2035px; }
+.contentWrapper .gridContentNone {
+  padding: 0; }
+  .contentWrapper .gridContentNone .grid {
+    margin: 0; }
+
+footer {
+  text-align: center;
+  margin: 20px 0; }
+
+.center, .centerKontakt {
+  text-align: center; }
+
+footer nav {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 5px 0;
+  margin: 0 0 20px; }
+nav#menu {
+  padding: 20px 35px;
+  background: #2acd7e;
+  text-align: center; }
+  nav#menu a {
+    color: white; }
+    nav#menu a:hover {
+      color: #622181; }
+
+.panel {
+  position: fixed;
+  left: -15.625em;
+  width: 15.625em; }
+
+.menu-link {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 54px;
+  height: 51px;
+  display: block;
+  background-image: url(../images/icon-menu.png);
+  z-index: 100; }
+
+h1, h2, h3, h4, h5, h6, p, li {
+  line-height: 1.3em;
+  color: #622181; }
+
+h1 {
+  font-family: "Novecento";
+  font-size: 60px;
+  letter-spacing: 0.1rem;
+  margin-bottom: 20px; }
+  #menu h1 {
+    font-family: "NovecentoBook";
+    font-size: 27.996px;
+    color: white;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white; }
+
+.col-1-2 h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  line-height: 1.5em;
+  font-size: 18px;
+  margin-top: 20px; }
+  .col-1-2 h2:first-child {
+    margin-top: 0; }
+
+h2, h6 {
+  font-family: "CardoItalic";
+  font-size: 30px;
+  color: #947e6b;
+  margin-top: 7px; }
+  h2:first-child, h6:first-child {
+    margin-top: 0; }
+
+h3 {
+  font-family: "CardoItalic";
+  font-size: 27.996px;
+  margin-top: 14px; }
+  h3:first-child {
+    margin-top: 0; }
+  h3 span {
+    font-size: 15.996px;
+    color: #947e6b; }
+  .center h3, .centerKontakt h3 {
+    font-size: 36px; }
+  .centerKontakt h3 {
+    margin-top: 0; }
+  .adresse h3 {
+    margin-top: 14px;
+    font-size: 24px;
+    color: #947e6b; }
+
+h4 {
+  font-family: "NovecentoBook";
+  font-size: 18px;
+  letter-spacing: 0.05rem;
+  margin-bottom: 7px; }
+
+h5 {
+  font-family: "NovecentoBook";
+  font-size: 24px;
+  letter-spacing: 0.05rem;
+  margin-bottom: 7px;
+  color: #947e6b;
+  text-align: center; }
+
+h6 {
+  font-size: 24px; }
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1.5em;
+  font-size: 18px;
+  color: #947e6b;
+  margin-top: 7px; }
+  p:first-child {
+    margin-top: 0; }
+  .center p, .centerKontakt p {
+    font-size: 21px;
+    margin-bottom: 35px; }
+  .centerKontakt p {
+    margin-bottom: 0; }
+
+ul {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 0;
+  margin-top: 14px; }
+  ul li {
+    color: #947e6b; }
+    .gridContentTop ul li, .gridContentNone ul li {
+      list-style: none;
+      margin-bottom: 7px;
+      text-indent: -14px;
+      padding-left: 14px; }
+      .gridContentTop ul li:before, .gridContentNone ul li:before {
+        content: "•";
+        padding-right: 7px; }
+  footer ul li {
+    display: inline; }
+  footer ul li:before, footer ul li a:before {
+    font: 27.996px "Entypo";
+    margin: 0 5px 0 10px; }
+  nav ul {
+    font-family: 'NovecentoBook';
+    letter-spacing: 0.05rem;
+    margin-top: 0; }
+    nav ul li:before, nav ul li a:before {
+      margin: 0 5px 0 30px; }
+  #menu ul {
+    border-bottom: 1px solid white; }
+    #menu ul:last-of-type {
+      font-family: 'Entypo';
+      font-size: 48px;
+      padding: 10px 0; }
+      #menu ul:last-of-type li {
+        display: inline-block;
+        line-height: 0.8em;
+        height: 40px;
+        padding: 0 20px 0 10px;
+        border-right: 1px solid white; }
+        #menu ul:last-of-type li:last-of-type {
+          border: none; }
+  #menu ul li {
+    padding-bottom: 20px; }
+
+footer .home:before {
+  content: "\2302"; }
+footer .ueber:before {
+  content: "\1F464"; }
+footer .angebot:before {
+  content: "\1F4BF"; }
+footer .kontakt:before {
+  font-size: 36px;
+  content: "\E724";
+  vertical-align: -2px; }
+footer .telefon:before {
+  content: "\1F4DE"; }
+footer .e-mail:before {
+  content: "\2709";
+  vertical-align: -2px; }
+
+a {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #2acd7e;
+  text-decoration: none;
+  border-bottom: 1px solid #2acd7e; }
+  a:hover {
+    color: #622181;
+    border-bottom: 1px solid #622181; }
+  .headerLinks a {
+    margin: 0 20px; }
+  footer a, header a, nav a, h2 a {
+    border-bottom: none; }
+    footer a:hover, header a:hover, nav a:hover, h2 a:hover {
+      border-bottom: none; }
+
+a[href="tel:0442002020"]:hover:before {
+  content: "044 200 20 20";
+  left: 0;
+  margin: 53px 0 0 72px;
+  position: absolute;
+  display: block;
+  background: white;
+  color: #2acd7e;
+  font-family: "NovecentoBook";
+  font-size: 15.996px;
+  line-height: 1em;
+  padding: 10px; }
+
+.contentWrapper h6 a {
+  font-family: "NovecentoBold";
+  color: white;
+  letter-spacing: 0.05rem;
+  display: inline-block;
+  margin-top: 7px;
+  margin-left: 0;
+  padding: 4px 10px 2.85714px;
+  background: #2acd7e; }
+  .contentWrapper h6 a:hover, .contentWrapper h6 a:focus {
+    color: white;
+    background: #622181; }
+  .contentWrapper h6 a:active {
+    background: #622181;
+    border: 1px solid #622181; }
+.contentWrapper h6 a {
+  font-size: 18px;
+  margin-bottom: 14px; }
+.teaser h6 a {
+  margin-bottom: 0; }
+
+.logo img {
+  width: 241px; }
+.teaser img {
+  display: block;
+  margin: 0 auto 20px; }
+
+#container {
+  position: fixed; }
+  #container img {
+    display: block; }
+
+.scene {
+  max-width: 100%;
+  min-width: 2000px; }
+
+.layer:nth-child(1) {
+  opacity: 1; }
+
+.layer:nth-child(2) {
+  opacity: 1; }
+
+@media desktop, only screen and (max-width: 1040px) {
+  h1 {
+    font-size: 48px; }
+
+  h2 {
+    font-size: 24px; }
+
+  .logo img {
+    width: 200px; } }
+@media handheld, only screen and (max-width: 768px) {
+  h1 {
+    font-size: 36px; }
+
+  h2 {
+    font-size: 21px; }
+
+  h3 {
+    margin-bottom: 7px; }
+    .teaser h3 {
+      margin-top: 0; }
+
+  .center h6 {
+    margin-top: 20px; }
+  .name h6 {
+    margin-top: 0; }
+
+  p, h4, ul {
+    font-size: 15.996px; }
+    .center p, .centerKontakt p, .center h4, .centerKontakt h4, .center ul, .centerKontakt ul {
+      margin-bottom: 0; }
+
+  .center p, .centerKontakt p {
+    font-size: 18px; }
+
+  .teaser img {
+    display: none; }
+
+  .headerWrapper, .contentWrapper {
+    margin-right: 0; }
+
+  header {
+    padding: 14px 0; }
+    header .logo {
+      margin-bottom: 14px; }
+
+  .contentWrapper .gridContent .grid, .contentWrapper .gridContentTop .grid, .contentWrapper .gridContentNone .grid {
+    padding: 0; }
+  .contentWrapper .gridContent .col-1-4, .contentWrapper .gridContent .col-1-1, .contentWrapper .gridContent .col-1-2, .contentWrapper .gridContent .center, .contentWrapper .gridContentTop .col-1-4, .contentWrapper .gridContentTop .col-1-1, .contentWrapper .gridContentTop .col-1-2, .contentWrapper .gridContentTop .center, .contentWrapper .gridContentNone .col-1-4, .contentWrapper .gridContentNone .col-1-1, .contentWrapper .gridContentNone .col-1-2, .contentWrapper .gridContentNone .center {
+    padding: 14px 14px 7px;
+    margin: 0;
+    border-left: none;
+    border-bottom: 1px solid #f6ede5; }
+    .contentWrapper .gridContent .col-1-4.center, .contentWrapper .gridContent .col-1-1.center, .contentWrapper .gridContent .col-1-2.center, .contentWrapper .gridContent .center.center, .contentWrapper .gridContentTop .col-1-4.center, .contentWrapper .gridContentTop .col-1-1.center, .contentWrapper .gridContentTop .col-1-2.center, .contentWrapper .gridContentTop .center.center, .contentWrapper .gridContentNone .col-1-4.center, .contentWrapper .gridContentNone .col-1-1.center, .contentWrapper .gridContentNone .col-1-2.center, .contentWrapper .gridContentNone .center.center {
+      padding: 35px; }
+  .contentWrapper .gridContent .col-1-1 {
+    margin-top: 0;
+    padding: 0;
+    border-bottom: 0; }
+
+  .headerLinks a {
+    margin: 0 7px; } }
+@media iphone, only screen and (max-width: 320px) {
+  header {
+    padding: 5px 0 20px; } }

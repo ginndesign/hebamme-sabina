@@ -1,0 +1,39 @@
+include includes/_e-mail
+include includes/_doctype
+html(lang='de')
+  include includes/_head
+  body.hyphenate
+    include includes/_parallax
+    include includes/_navigation
+    .grid.grid-pad.push
+      .headerWrapper
+        .col-1-1
+          header.gridContent
+            a.menu-link.push(href='#menu')  
+            .logo
+              a(href='index.html')
+                img(src='images/Hebamme-Zuerich-Kontakt.png', alt='Sabina Oertli – Hebamme in Zürich')
+            h1.editable Hebamme in Zürich
+      .contentWrapper.push
+        .col-1-1
+          .gridContent.centerKontakt.name.repeatables.editable
+            .grid 
+              .col-1-1
+                h3 Sabina Oertli
+                h6 Dipl. Hebamme mit Bachelor Abschluss
+                p Mustergasse 10 ∙ 8000 Zürich ∙ 044 200 20 20
+                  | ∙ 
+                  +Kontakt 
+                  |  ∙ 
+                  a(href="#") Anfahrt
+          .gridContent.center.name.teaser.repeatables.editable
+            .grid
+              .col-1-1
+                h6 Anmeldung:
+                  br
+                  +Geburtvorbeitungskurs
+                  +Akupunkturbehandlung
+                  +Rueckbildungskurs
+      .col-1-1
+        include includes/_footer
+    include includes/_scripts

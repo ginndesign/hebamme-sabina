@@ -1,0 +1,21 @@
+// Background
+
+@mixin cover($cover-property) {
+	-webkit-background-size: $cover-property;
+	-moz-background-size: $cover-property;
+	-ms-background-size: $cover-property;
+	-o-background-size: $cover-property;
+	background-size: $cover-property;
+}
+
+// Typografie
+
+// Hyphenation
+
+@mixin hyphens($hyphens-property) {
+	-webkit-hyphens: $hyphens-property;
+	-moz-hyphens: $hyphens-property;
+	-ms-hyphens: $hyphens-property;
+	-o-hyphens: $hyphens-property;
+	hyphens: $hyphens-property;
+}

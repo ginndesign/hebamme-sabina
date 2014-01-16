@@ -7,14 +7,15 @@ sass_dir = "sass"
 images_dir = "images"
 javascripts_dir = "javascripts"
 fonts_dir = "fonts"
+jade_dir = "jade"
 
 output_style = :nested
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
-# relative_assets = true
+relative_assets = true
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
-# line_comments = false
+line_comments = false
 color_output = false
 
 

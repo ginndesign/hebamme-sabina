@@ -1,0 +1,101 @@
+include includes/_e-mail
+include includes/_doctype
+html(lang='de')
+  include includes/_head
+  body.hyphenate
+    include includes/_parallax
+    include includes/_navigation
+    .grid.grid-pad.push
+      .headerWrapper
+        .col-1-1
+          header.gridContent
+            a.menu-link.push(href='#menu')  
+            .logo
+              a(href='index.html')
+                img(src='images/Hebamme-Zuerich-Angebot.png', alt='Sabina Oertli – Hebamme in Zürich')
+            h1.editable Mein Angebot
+            h2.headerLinks
+              a.repeatables.editable(href="#Schwangerschaft") Schwangerschaft
+              | ∙
+              a.repeatables.editable(href="#Geburtsvorbereitung") Geburtsvorbereitung
+              | ∙
+              a.repeatables.editable(href="#Wochenbett") Wochenbett
+              | ∙
+              a.repeatables.editable(href="#Rueckbildung") Rückbildung
+      .contentWrapper.push
+        .col-1-1
+          #Schwangerschaft.gridContentNone.repeatables.editable
+            .grid
+              .col-1-2.center
+                img(src='images/icon-schwangerschaft.png', alt='Schwangerschaft')
+                h3 Schwangerschaft
+                p Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte.
+              .col-1-2
+                p Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. 
+                p Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben.
+                ul
+                  li Unorthographisches Leben
+                  li Kleine Zeile Blindtext
+                  li Duden fließt durch
+          #Geburtsvorbereitung.gridContentNone.repeatables.editable
+            .grid
+              .col-1-2.center
+                img(src='images/icon-geburtsvorbereitung.png', alt='Geburtsvorbereitung')
+                h3 Geburtsvorbereitung
+                p Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte.
+                h6 Anmeldung:
+                  br
+                  +Geburtvorbeitungskurs  
+                  br
+                  | oder
+                  br
+                  +Akupunkturbehandlung
+              .col-1-2
+                h2 Geburtvorbeitungskurse zu Hause
+                p Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. 
+                p Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben.
+                ul
+                  li Unorthographisches Leben
+                  li Kleine Zeile Blindtext
+                  li Duden fließt durch
+                h2 Akupunktur
+                p Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. 
+                p Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben.
+                ul
+                  li Unorthographisches Leben
+                  li Kleine Zeile Blindtext
+                  li Duden fließt durch
+          #Wochenbett.gridContentNone.repeatables.editable
+            .grid
+              .col-1-2.center
+                img(src='images/icon-wochenbett.png', alt='Wochenbett')
+                h3 Wochenbett
+                p Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte.
+              .col-1-2
+                h2 Wochenbettbetreuung zu Hause
+                p Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. 
+                p Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben.
+                ul
+                  li Unorthographisches Leben
+                  li Kleine Zeile Blindtext
+                  li Duden fließt durch
+          #Rueckbildung.gridContentNone.repeatables.editable
+            .grid
+              .col-1-2.center
+                img(src='images/icon-rueckbildung.png', alt='Rückbildung')
+                h3 Rückbildung
+                p Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte.
+                h6 Anmeldung:
+                  br 
+                  +Rueckbildungskurs
+              .col-1-2
+                h2 Rückbildungskurse
+                p Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik, eines großen Sprachozeans. 
+                p Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen. Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben.
+                ul
+                  li Unorthographisches Leben
+                  li Kleine Zeile Blindtext
+                  li Duden fließt durch
+      .col-1-1
+        include includes/_footer
+    include includes/_scripts

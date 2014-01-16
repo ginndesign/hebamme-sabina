@@ -1,0 +1,28 @@
+// Typografie
+$baseFontSize: 12px;
+$smoothTextShadow: 1px 1px 1px rgba(255,255,255,0.005);
+$letterSpacingHeadline: 0.1rem;
+$lineHeight: 1.3em;
+$lineHeightLauftext: 1.5em;
+
+// Grössen
+$desktopWidth: 1020px;
+$logoWidth: 240px;
+$marginBig: 35px;
+$marginMedium: 20px;
+$marginSmall: 14px;
+
+
+// Farben
+$corporateColorViolet: #622181;
+$corporateColorLauftext: #947e6b;
+$corporateLinkColor: #2acd7e;
+$white: #fff;
+$lightGrey: #f6ede5;
+
+//Linien
+$whiteBorder: 1px solid $white;
+$greyBorder: 1px solid $corporateColorLauftext;
+$lightGreyBorder: 1px solid $lightGrey;
+$linkBorder: 1px solid $corporateLinkColor;
+$linkBorderHover: 1px solid $corporateColorViolet;
