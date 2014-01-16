@@ -208,6 +208,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   src: url('../fonts/novecentowide-book-webfont.ttf') format('truetype'), url('../fonts/novecentowide-book-webfont.otf') format('opentype'), url('../fonts/novecentowide-book-webfont.woff') format('woff'), url('../fonts/novecentowide-book-webfont.eot') format('embedded-opentype'), url('../fonts/novecentowide-book-webfont.svg') format('svg'); }
 
 @font-face {
+  font-family: "NovecentoBold";
+  src: url('../fonts/novecentowide-bold-webfont.ttf') format('truetype'), url('../fonts/novecentowide-bold-webfont.otf') format('opentype'), url('../fonts/novecentowide-bold-webfont.woff') format('woff'), url('../fonts/novecentowide-bold-webfont.eot') format('embedded-opentype'), url('../fonts/novecentowide-bold-webfont.svg') format('svg'); }
+
+@font-face {
   font-family: "CardoItalic";
   src: url('../fonts/cardo-italic-webfont.ttf') format('truetype'), url('../fonts/cardo-italic-webfont.otf') format('opentype'), url('../fonts/cardo-italic-webfont.woff') format('woff'), url('../fonts/cardo-italic-webfont.eot') format('embedded-opentype'), url('../fonts/cardo-italic-webfont.svg') format('svg'); }
 
@@ -460,35 +464,17 @@ a {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: #2acd7e;
-  text-decoration: none; }
-  .teaser p a, .contentWrapper h6 a {
-    display: inline-block;
-    margin-top: 7px;
-    margin-left: 14px;
-    padding: 2px 5px;
-    border: 1px solid #2acd7e; }
-    .teaser p a:first-child, .contentWrapper h6 a:first-child {
-      margin-left: 0; }
-    .teaser p a:hover, .teaser p a:focus, .contentWrapper h6 a:hover, .contentWrapper h6 a:focus {
-      color: white;
-      background: #2acd7e; }
-    .teaser p a:focus, .contentWrapper h6 a:focus {
-      display: block; }
-    .teaser p a:active, .contentWrapper h6 a:active {
-      background: #622181;
-      border: 1px solid #622181; }
+  text-decoration: none;
+  border-bottom: 1px solid #2acd7e; }
   a:hover {
-    color: #622181; }
+    color: #622181;
+    border-bottom: 1px solid #622181; }
   .headerLinks a {
     margin: 0 20px; }
-  .contentWrapper h6 a {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    line-height: 1.5em;
-    font-size: 21px;
-    margin-bottom: 14px; }
-  .teaser h6 a {
-    margin-bottom: 0; }
+  footer a, header a, nav a, h2 a {
+    border-bottom: none; }
+    footer a:hover, header a:hover, nav a:hover, h2 a:hover {
+      border-bottom: none; }
 
 a[href="tel:0442002020"]:hover:before {
   content: "044 200 20 20";
@@ -502,6 +488,31 @@ a[href="tel:0442002020"]:hover:before {
   font-size: 15.996px;
   line-height: 1em;
   padding: 10px; }
+
+.contentWrapper h6 a {
+  font-family: "NovecentoBold";
+  color: white;
+  letter-spacing: 0.05rem;
+  display: inline-block;
+  margin-top: 7px;
+  margin-left: 14px;
+  padding: 4px 10px;
+  background: #2acd7e; }
+  .contentWrapper h6 a:first-child {
+    margin-left: 0; }
+  .contentWrapper h6 a:hover, .contentWrapper h6 a:focus {
+    color: white;
+    background: #622181; }
+  .contentWrapper h6 a:focus {
+    display: block; }
+  .contentWrapper h6 a:active {
+    background: #622181;
+    border: 1px solid #622181; }
+.contentWrapper h6 a {
+  font-size: 18px;
+  margin-bottom: 14px; }
+.teaser h6 a {
+  margin-bottom: 0; }
 
 .logo img {
   width: 241px; }

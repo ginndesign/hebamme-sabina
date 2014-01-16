@@ -12,6 +12,7 @@
 
  @include font-face("Novecento", font-files("novecentowide-light-webfont.ttf", "novecentowide-light-webfont.otf", "novecentowide-light-webfont.woff", "novecentowide-light-webfont.eot", "novecentowide-light-webfont.svg"));
  @include font-face("NovecentoBook", font-files("novecentowide-book-webfont.ttf", "novecentowide-book-webfont.otf", "novecentowide-book-webfont.woff", "novecentowide-book-webfont.eot", "novecentowide-book-webfont.svg"));
+ @include font-face("NovecentoBold", font-files("novecentowide-bold-webfont.ttf", "novecentowide-bold-webfont.otf", "novecentowide-bold-webfont.woff", "novecentowide-bold-webfont.eot", "novecentowide-bold-webfont.svg"));
  @include font-face("CardoItalic", font-files("cardo-italic-webfont.ttf", "cardo-italic-webfont.otf", "cardo-italic-webfont.woff", "cardo-italic-webfont.eot", "cardo-italic-webfont.svg"));
  @include font-face("Entypo", font-files("entypo.ttf", "entypo.otf", "entypo.woff", "entypo.eot", "entypo.svg"));
  @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,700);
@@ -324,43 +325,20 @@ a{
 	@include transition(all 0.3s ease);
 	color: $corporateLinkColor;
 	text-decoration: none;
-	.teaser p &, .contentWrapper h6 &{
-		display: inline-block;
-		margin-top: $marginSmall/2;
-		margin-left: $marginSmall;
-		padding: $marginMedium/10 $marginMedium/4;
-		border: $linkBorder;
-		&:first-child{
-			margin-left: 0;
-		}
-		&:hover, &:focus{
-			color: $white;
-			background: $corporateLinkColor;
-		}
-		&:focus{
-			display: block;
-		}
-		&:active{
-			background: $corporateColorViolet;
-			border: $linkBorderHover;
-		}
-	}
+	border-bottom: $linkBorder;
 	&:hover{
 		color: $corporateColorViolet;
+		border-bottom: $linkBorderHover;
 	}
 	.headerLinks &{
 		margin: 0 $marginMedium;
 	}
-	.contentWrapper h6 &{
-		font-family: 'Open Sans', sans-serif;
-		font-weight: 300;
-		line-height: $lineHeightLauftext;
-		font-size: $baseFontSize*1.75;
-		margin-bottom: $marginSmall;
+	footer &, header &, nav &, h2 &{
+		border-bottom: none;
+		&:hover {
+			border-bottom: none;
+		}
 	}
-	.teaser h6 &{
-		margin-bottom: 0;
-	}	
 }
 a[href="tel:0442002020"]:hover:before{
 	content: "044 200 20 20";
@@ -374,6 +352,42 @@ a[href="tel:0442002020"]:hover:before{
 	font-size: $baseFontSize*1.333;
 	line-height: 1em;
 	padding: $marginMedium/2;
+}
+// Buttons
+a{
+	.contentWrapper h6 &{
+		font-family: "NovecentoBold";
+		color: $white;
+		letter-spacing: $letterSpacingHeadline/2;
+		display: inline-block;
+		margin-top: $marginSmall/2;
+		margin-left: $marginSmall;
+		padding: $marginMedium/5 $marginMedium/2;
+		background: $corporateLinkColor;		
+		&:first-child{
+			margin-left: 0;
+		}
+		&:hover, &:focus{
+			color: $white;
+			background: $corporateColorViolet;
+		}
+		&:focus{
+			display: block;
+		}
+		&:active{
+			background: $corporateColorViolet;
+			border: $linkBorderHover;
+		}
+	}
+	.contentWrapper h6 &{
+		// font-family: 'Open Sans', sans-serif;
+		// line-height: $lineHeightLauftext;
+		font-size: $baseFontSize*1.5;
+		margin-bottom: $marginSmall;
+	}
+	.teaser h6 &{
+		margin-bottom: 0;
+	}	
 }
 // Bilder
 
