@@ -495,16 +495,12 @@ a[href="tel:0442002020"]:hover:before {
   letter-spacing: 0.05rem;
   display: inline-block;
   margin-top: 7px;
-  margin-left: 14px;
-  padding: 4px 10px;
+  margin-left: 0;
+  padding: 4px 10px 2.85714px;
   background: #2acd7e; }
-  .contentWrapper h6 a:first-child {
-    margin-left: 0; }
   .contentWrapper h6 a:hover, .contentWrapper h6 a:focus {
     color: white;
     background: #622181; }
-  .contentWrapper h6 a:focus {
-    display: block; }
   .contentWrapper h6 a:active {
     background: #622181;
     border: 1px solid #622181; }

@@ -361,18 +361,12 @@ a{
 		letter-spacing: $letterSpacingHeadline/2;
 		display: inline-block;
 		margin-top: $marginSmall/2;
-		margin-left: $marginSmall;
-		padding: $marginMedium/5 $marginMedium/2;
+		margin-left: 0;
+		padding: $marginMedium/5 $marginMedium/2 $marginMedium/7;
 		background: $corporateLinkColor;		
-		&:first-child{
-			margin-left: 0;
-		}
 		&:hover, &:focus{
 			color: $white;
 			background: $corporateColorViolet;
-		}
-		&:focus{
-			display: block;
 		}
 		&:active{
 			background: $corporateColorViolet;
@@ -380,8 +374,6 @@ a{
 		}
 	}
 	.contentWrapper h6 &{
-		// font-family: 'Open Sans', sans-serif;
-		// line-height: $lineHeightLauftext;
 		font-size: $baseFontSize*1.5;
 		margin-bottom: $marginSmall;
 	}
