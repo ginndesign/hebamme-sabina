@@ -13,18 +13,18 @@ html(lang='de')
             .logo
               a(href='index.html')
                 img(src='images/Hebamme-Zuerich-Angebot.png', alt='Sabina Oertli – Hebamme in Zürich')
-            h1 Mein Angebot
+            h1.editable Mein Angebot
             h2.headerLinks
-              a(href="#Schwangerschaft") Schwangerschaft
+              a.repeatables.editable(href="#Schwangerschaft") Schwangerschaft
               | ∙
-              a(href="#Geburtsvorbereitung") Geburtsvorbereitung
+              a.repeatables.editable(href="#Geburtsvorbereitung") Geburtsvorbereitung
               | ∙
-              a(href="#Wochenbett") Wochenbett
+              a.repeatables.editable(href="#Wochenbett") Wochenbett
               | ∙
-              a(href="#Rueckbildung") Rückbildung
+              a.repeatables.editable(href="#Rueckbildung") Rückbildung
       .contentWrapper.push
         .col-1-1
-          #Schwangerschaft.gridContentNone
+          #Schwangerschaft.gridContentNone.repeatables.editable
             .grid
               .col-1-2.center
                 img(src='images/icon-schwangerschaft.png', alt='Schwangerschaft')
@@ -37,7 +37,7 @@ html(lang='de')
                   li Unorthographisches Leben
                   li Kleine Zeile Blindtext
                   li Duden fließt durch
-          #Geburtsvorbereitung.gridContentNone
+          #Geburtsvorbereitung.gridContentNone.repeatables.editable
             .grid
               .col-1-2.center
                 img(src='images/icon-geburtsvorbereitung.png', alt='Geburtsvorbereitung')
@@ -65,7 +65,7 @@ html(lang='de')
                   li Unorthographisches Leben
                   li Kleine Zeile Blindtext
                   li Duden fließt durch
-          #Wochenbett.gridContentNone
+          #Wochenbett.gridContentNone.repeatables.editable
             .grid
               .col-1-2.center
                 img(src='images/icon-wochenbett.png', alt='Wochenbett')
@@ -79,7 +79,7 @@ html(lang='de')
                   li Unorthographisches Leben
                   li Kleine Zeile Blindtext
                   li Duden fließt durch
-          #Rueckbildung.gridContentNone
+          #Rueckbildung.gridContentNone.repeatables.editable
             .grid
               .col-1-2.center
                 img(src='images/icon-rueckbildung.png', alt='Rückbildung')
